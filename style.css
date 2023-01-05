@@ -47,7 +47,6 @@ header h4{
     margin-bottom: 3px;
     text-align: center;
     left: -17%;
-
 }
 header h2{
     position: relative;
@@ -61,6 +60,7 @@ header h2{
 .row-fluid{
   display: grid;
   position: relative;
+  margin: 0;
   grid-template-columns: repeat(2, 48% 5% 1fr);
   padding-top: 30px;
   padding: 1rem 0;
@@ -122,7 +122,7 @@ header h2{
 .aside-right{
     width: 20%;
     height: 5%;
-    top:12%;
+    top:13%;
     left: 60%;
     position: absolute;
 
@@ -155,14 +155,97 @@ aside {
 /* --------------- 1000px Screens --------------- */
 
 @media (max-width: 1000px) {
+    .administrator .container{
+        display: block;
+        padding: 60px;
+        margin: 0 10vw 0;
+    }
+    header h4{
+        left: -20%;
+    }
+    header h2{
+        left: -20%;
+    }
+    .row-fluid{
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(2,40% 30% 1fr);
+        padding-top: 30px;
+        padding: 1rem 0;
+        gap: 3px;
+      }
+      .aside-right{
+        width: 20%;
+        height: 5%;
+        top:11%;
+        left: 60%;
+        position: absolute;
+    
+    }
+    .vcounter_TypeText{
+        position: relative;
+        text-align: center;
+        left: 80%;
+    }
+
 }
 
 /* --------------- 768px Screens --------------- */
 
 @media (max-width: 768px) {
+    .administrator .container{
+        display: block;
+        padding: 40px;
+        margin: 0 10vw 0;
+    }
+    header h4{
+        left: 0%;
+    }
+    header h2{
+        left: 0%;
+    }
+    .row-fluid{
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 30px;
+        padding: 1rem 0;
+        margin: 0;
+        gap: 3px;
+      }
+    .aside-right{
+        position: relative;
+        top: 0%; 
+        left: 18%;
+        padding-bottom: 110px;
+    }
+    .vcounter_TypeText{
+        width: 5rem;
+        text-align: right;
+    }
+
+
 }
 
 /* --------------- 500px Screens --------------- */
 
 @media (max-width: 500px) {
+    header h4{
+        left: -5%;
+    }
+    header h2{
+        left: -5%;
+    }
+    .aside-right{
+        position: relative;
+        top: 0%; 
+        left: 0%;
+        padding-bottom: 110px;
+    }
+    .vcounter_TypeText{
+        width: 6rem;
+        text-align: right;
+    }
+      
+
 }
