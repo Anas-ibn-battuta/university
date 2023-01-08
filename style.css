@@ -1,4 +1,85 @@
 
+.allTabs {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.allTabs li {
+    /* need to make sure that @media change inline to block for web mobile*/
+    /* need to make tab active to change contents */
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+
+.allTabs li:hover {
+    background-color: white;
+    color: black;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: inline;
+    float: left;
+    padding-right: 10px;
+    padding-left: 30px;
+}
+
+.flex-container {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nested-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+
+.item_p {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding-left: 30px;
+}
+
+.item {
+    flex-basis: 33%;
+    display: inline;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+
+p {
+    padding-left: 30px;
+}
+
+a {
+    font-size: 24px;
+    font-weight: bolder;
+    color: green;
+    text-decoration: none;
+}
+
+.all_news_link {
+    display: block;
+    margin: auto;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
 /*---------Font used-----------*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai&family=Pacifico&family=Raleway&display=swap');
@@ -250,7 +331,7 @@ aside {
       
 
 }
-=======
+
 
 #slider{
     overflow:hidden;
@@ -302,7 +383,7 @@ aside {
     }
     
 }
-=======
+
 
 nav ul {
     list-style: none;
@@ -367,7 +448,7 @@ nav ul {
 .submenu li:hover > .submenu2{
     display: block;
 }
-=======
+
 
 header{
     background-color: rgb(250, 246, 246);
@@ -405,5 +486,6 @@ header{
     max-height: 100%;
     margin: auto;
 }
+
 
 
