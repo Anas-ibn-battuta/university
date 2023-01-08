@@ -1,35 +1,5 @@
-/*---------Font used-----------*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai&family=Pacifico&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap');
 
-:root {
-    --hue-1: 113;
-    --hue-2: 291;
-    --main-color-1: hsl(var(--hue-1), 41%, 38%);
-    --main-color-1-dark: hsl(var(--hue-1), 41%, 20%);
-    --bg-color: hsl(var(--hue-2), 3%, 93%);
-}
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Prompt', sans-serif;
-}
-
-body {
-    margin: 0;
-    font-size: 10px;
-    line-height: 20px;
-    color: hsl(113, 41%, 38%);
-    background-color: hsl(291, 20%, 93%);
-}
-
-::selection {
-    background-color: hsl(116, 42%, 30%);
-    color: #fff;
-}
-    .allTabs {
+.allTabs {
     margin-top: 20px;
     border: 1px solid black;
     padding: 10px;
@@ -44,15 +14,14 @@ body {
     margin: 10px;
     padding: 5px;
     border: 1px solid black;
-
+    cursor: default;
 }
 
 .allTabs li:hover {
-    background-color: white;
-    color: black;
+    background-color: green;
 }
 
-img {
+img.hover_content {
     width: 300px;
     height: auto;
     margin: auto;
@@ -72,7 +41,6 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
 }
 
 
@@ -87,18 +55,39 @@ img {
     flex-basis: 33%;
     display: inline;
     flex-direction: row;
-    /* justify-content: center; */
 }
 
 
-p {
+p.hover_content {
     padding-left: 30px;
+    color: black;
 }
 
-a {
+a.hover_content:link {
     font-size: 24px;
     font-weight: bolder;
     color: green;
+    text-decoration: none;
+}
+
+a.hover_content:visited {
+    font-size: 24px;
+    font-weight: bolder;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a.hover_content:hover {
+    font-size: 24px;
+    font-weight: bolder;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a.hover_content:active {
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
     text-decoration: none;
 }
 
@@ -107,10 +96,39 @@ a {
     margin: auto;
     text-decoration: underline;
     margin-bottom: 10px;
+    color: green;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 
-
+/*---------Font used-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai&family=Pacifico&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap');
+:root{ 
+    --hue-1:113;
+    --hue-2:291;
+    --main-color-1:hsl(var(--hue-1), 41%, 38%);
+    --main-color-1-dark:hsl(var(--hue-1), 41%, 20%);
+    --bg-color:hsl(var(--hue-2), 3%, 93%);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+body{
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: hsl(113, 41%, 38%);
+    background-color: hsl(291, 20%, 93%);
+}
+::selection{
+    background-color: hsl(116, 42%, 30%);
+    color:#fff;
+  }
 
 /*-----------------administrator section style------------------*/
 
@@ -444,25 +462,27 @@ nav ul {
     background-color: #417d14;
     justify-content: center;
     flex-wrap: wrap;
-}
-nav ul li {
+  }
+  
+  nav ul li {
     position: relative;
-}
-nav ul li a {
+  }
+  
+  nav ul li a {
     display: block;
     padding: 1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 17px;
-    font-family: 'Prompt', sans-serif;
-}
-nav ul li a:hover {
+  }
+  nav ul li a:hover{
     background: rgb(43, 43, 43);
     color: #417d14;
     display: block;
-}
 
-nav ul li ul {
+  }
+
+  
+  nav ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
@@ -470,9 +490,9 @@ nav ul li ul {
     width: 200px;
     display: none;
     text-decoration: none;
-}
-
-.navbar ul li:hover ul {
+  }
+  
+  nav ul li:hover ul {
     display: none;
 }
 
@@ -665,17 +685,8 @@ h2 {
         padding-left: 410px;
     }
 }
-.video-section{
-    background-color: rgb(7, 104, 7);
-  }
-  .ul-video{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    text-decoration: none;
-    margin-left: 90px;
-  }
-  
-  .li-video{
-    display:inline;
-    margin: 60px;
-  }
+
+ 
+
+
+
