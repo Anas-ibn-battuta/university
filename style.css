@@ -473,6 +473,7 @@ nav ul {
     padding: 1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-size: 16px;
   }
   nav ul li a:hover{
     background: rgb(43, 43, 43);
@@ -685,7 +686,20 @@ h2 {
         padding-left: 410px;
     }
 }
-
+.video-section{
+    background-color: rgb(7, 104, 7);
+  }
+  .ul-video{
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-decoration: none;
+    margin-left: 200px;
+    margin: 150px;
+  }
+  
+  .li-video{
+    display: inline;
+  }
  
 
 
