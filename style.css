@@ -578,6 +578,7 @@ aside {
 
 }
 
+/*carousel section*/
 
 #slider{
     overflow:hidden;
@@ -587,7 +588,7 @@ aside {
     width: 650%;
     margin:0;
     left:0;
-    animation: 20s slider infinite;
+    animation: 25s slider infinite;
 }
 #slider figure img{
     float:left;
@@ -595,39 +596,38 @@ aside {
 }
 @keyframes slider{
     0% {
-        left:0;
+        left:-3%;
     }
     20% {
-        left:0;
+        left:-3%;
     }
     25% {
-        left: -108%;
+        left: -105%;
     }
     35% {
-        left: -108%;
+        left: -105%;
     }
     45%{
-        left: -216%;
+        left: -210%;
     }
     50%{
-        left: -216%;
+        left: -210%;
     }
     65% {
-        left: -324%;
+        left: -315%;
     }
     75%{
-        left: -324%;
+        left: -315%;
     }
     80%{
-        left:-425%;
+        left:-420%;
     }
     95%{
-        left:-425%
+        left:-420%
     }
     100%{
-        left:-532%;
+        left:-523%;
     }
-    
 }
 
 
