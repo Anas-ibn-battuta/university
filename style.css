@@ -8,6 +8,7 @@ body{
     line-height: 20px;
     color: hsl(113, 41%, 38%);
     font-family: 'Prompt', sans-serif;
+    overflow-x: hidden;
 
 }
 ::selection{
@@ -88,6 +89,7 @@ nav ul {
     text-decoration: none;
     font-size: 1.1rem;
     color: rgb(255, 255, 255);
+    margin-left: 40px;
   }
   nav ul li a:hover{
     background: rgb(43, 43, 43);
@@ -103,9 +105,18 @@ nav ul {
     width: 200px;
     display: none;
     text-decoration: none;
+    
   }
   
   nav ul li:hover ul {
+    display: none;
+  }
+.checkbtn{
+    color: #fff; 
+    font-size: 25px;
+    margin:10px;
+    margin-left: 100px;
+    cursor: pointer;
     display: none;
   }
  
@@ -502,6 +513,12 @@ aside {
         position: relative;
         width: 2vw;
     }
+    .checkbtn{
+        display: block;
+    }
+    nav ul li a{
+        display: none;
+    }
 
 }
 
@@ -543,6 +560,9 @@ aside {
         width: 2vw;
         height: auto;
     }
+   
+
+   
 
 
 }
@@ -638,7 +658,7 @@ aside {
     bottom: 15px;
     right: 50px;     
     padding: 10px;
-    border: 0;
+    border:0;
     cursor: pointer;
     transition: 0.5s;
     transform: translateY(100px);
@@ -767,6 +787,7 @@ aside {
     .footer-img{
        padding-left: 410px;
     }
+   
 }
 /*table style*/
 .containerx{
