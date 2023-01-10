@@ -748,10 +748,30 @@
             </div>
     </section>
     <!--Administrator section end-->
-    <a href="#" class="gotopbtn">Back to Top &#8593;</a>
+        <!--Back to top button start-->
+           <button class="gotopbtn">&#8679;</button>
+
+           <script>
+            let gotopbtn = document.querySelector(".gotopbtn");
+            gotopbtn.onclick = function(){scrollToTop()}
+            window.onscroll = function(){scroll()};
+            function scroll(){
+                if(document.body.scrollTop >= 30 || document.documentElement.scrollTop >= 30){
+                    gotopbtn.style.transform = "translateY(0)";
+                }else{
+                    gotopbtn.style.transform ="translateY(100px)";
+                }
+            }
+            function scrollToTop(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop =0;
+                }
+           </script>
+        <!--Back to top end-->
+
+
     <!-- Footer start-->
     <footer class="footer_green">
-        <!--Go to Top Btn -->
             <h1>Fatoni University</h1>
                 <div class="detail">
                     <p>Copyright 2023</p>

@@ -630,24 +630,23 @@ aside {
     }
 }
 
-
+/*------go to top button style---*/
 .gotopbtn {
-    --offset: 50px; 
-    position: relative;
-    bottom: 20px;
-    left: 88%;     
-    place-self: end;
-    margin-top: calc(100vh + var(--offset));
-    
-    /* visual styling */
-    text-decoration: none;
+    overflow: hidden;
+    z-index: 100;
+    position: fixed;
+    bottom: 15px;
+    right: 50px;     
     padding: 10px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(100px);
     font-size: 1.2rem;
     font-family: 'Prompt', sans-serif;
     color: white;
-    background: #29bd67;
-    border-radius: 100px;
-    white-space: nowrap;
+    background: var(--main-color-1);
+    border-radius: 4px;
   }
 
 
