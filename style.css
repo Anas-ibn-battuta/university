@@ -649,7 +649,73 @@ aside {
         left:-523%;
     }
 }
+/*------Flag-slider style------*/
 
+.Flag-slider {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    left: 10%;
+    width: 80%;
+    overflow: hidden;
+}
+.Flag-slider figure {
+    display: flex;
+    width: 100%;
+}
+.Flag-slider figure img {
+    height: 180px;
+    width: 40%;
+    transition: all 0.15s ease;
+}
+.Flag-slider figure input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid var(--main-color-1) 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: var(--main-color-1);}
+#img1:checked ~ .m1 {
+    margin-left: -1%;
+}
+#img2:checked ~ .m2 {
+    margin-left: -6%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -9%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -12%;
+}
+#img5:checked ~ .m5 {
+    margin-left: -45%;
+}#img6:checked ~ .m6 {
+    margin-left: -67%;
+}#img7:checked ~ .m7 {
+    margin-left: -90%;
+}#img8:checked ~ .m8 {
+    margin-left: -112%;
+}#img9:checked ~ .m9 {
+    margin-left: -134.5%;
+}#img10:checked ~ .m10 {
+    margin-left: -157%;
+}#img11:checked ~ .m11 {
+    margin-left: -200%;
+}
+#img12:checked ~ .m12 {
+    margin-left: -300%;
+}
 /*------go to top button style---*/
 .gotopbtn {
     overflow: hidden;
