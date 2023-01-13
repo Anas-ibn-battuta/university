@@ -256,174 +256,25 @@
         </div>
     </div>
 
-    <!--table section end-->
-
-    <!--nav hover content section start [Navigation bar with hover functionality]-->
     <section class="flex-container">
-        <section class="tab">
-            <button class="tablinks" onclick="openNews(event, 'Release')">News Release</button>
-            <button class="tablinks" onclick="openNews(event, 'Student')">Student Recruitment News</button>
-          </section>
-          
-          <section id="Release" class="tabcontent">
-            <section class="News-item">
-                <section class="item">
-                    <img class="News-img" src="img/fn651112p1.jpg" alt="image">
-                    <a class="News-title" href="https://www.google.com/" target="_blank">
-                        <h3>Welcoming Lieutenant General Shanti Sakuntanaga, Commander of the 4th Army Region/Director of Internal Security Operations Region 4.
-                        </h3>
-                    </a>
-                </section>
-                <p class="News-P">
-                    Saturday, November 12, 2022 at 11:00 a.m. Associate Professor Dr. Ismail Lutfi Japakiya,
-                    President
-                    of Fatoni University
-                    Welcoming Lieutenant General Shanti Sakuntanaga, Commander of the 4th Army Region/Director of
-                    Internal Security
-                    Operations Region 4 ...
-                </p>
-            </section>
-         
-                <section class="News-item">
-                    <section class="item">
-                        <img class="News-img" src="img/fn651005p1.jpg" alt="image">
-                        <a class="News-title" href="https://www.google.com/" target="_blank">
-                            FTU confers an honorary doctorate degree in political science to General Surayut Chulanont.
-                        </a>
-                    </section>
-                <p class="News-P">
-                    Fatoni University Organized an honorary doctorate degree in political science awarding ceremony
-                    to
-                    General Surayut
-                    Chulanont, Chairman of the Steering Committee of the project "Sending Thai Hearts to Southern
-                    Hearts" on October 5,
-                    2022
-                    at Chamai Maruchet room, 3rd floor, Royal Thai Army Club (Vibhavadi) ) Bangkok As a person who
-                    plays
-                    a role in
-                    building
-                    reconciliation in the southern border provinces, General Surayud Chulanont graduated from St.
-                    Francis Xavier Convent
-                    School. Saint Gabriel's School ...
-                </p>
-                </section>
-                <section class="News-item">
-                    <section class="News-item">
-                        <section class="item">
-                            <img class="News-img" src="img/fn650904p1.jpg" alt="image">
-                        <a class="News-title" href="https://www.google.com/" target="_blank">
-                            17th Graduation Ceremony Fatoni University
-                        </a>
-                    </section>
-                <p class="News-P">
-                    On September 4, 2022, Mr. Wan Muhammad Noor Matha, President of Fatoni University Council
-                    Presided
-                    over the 17th
-                    Graduation Ceremony with Assoc. Graduates and parents welcome The president of the university
-                    council gave a sermon to
-                    one of the graduates. “All praise belongs to Allah. Today is another important day...
-                </p>
-            </section>
-          </section>
-        </section>
-          
-        <section id="Student" class="tabcontent">
-            <section class="News-item">
-                <section class="item">
-                    <img class="News-img" src="img/fn650809p1.jpg" alt="image">
-                    <a class="News-title" href="https://www.google.com/" target="_blank">
-                        Attended the signing ceremony of the Memorandum of Understanding (MOU) of the Entrepreneur
-                        Development Network (TED
-                        Fellow) for the year 2022
-                    </a>
-                </section>
-                <p class="News-P">
-                    On August 9, 2022, Fatoni University in collaboration with the Technology and Innovation
-                    Entrepreneurship Development
-                    Fund (TED Fund), Ministry of Higher Education, Science, Research and Innovation, (Phra.) and
-                    government and private
-                    agencies. entrepreneur development Provide funding for technology startups hoping to incubate
-                    Ready to give advice to
-                    entrepreneurs who need research funding. and develop further into commercial Emphasis is placed
-                    on incubating and
-                    developing startup entrepreneurs to become potential entrepreneurs. and also in response to the
-                    national strategy of
-                    building competitiveness ...
-                </p>
-            </section>
-         
-                <section class="News-item">
-                    <section class="item">
-                        <img class="News-img" src="img/fn650807p1m.JPG" alt="image">
-                        <a class="News-title" href="https://www.google.com/" target="_blank">
-                            Kuwait contributes to the purchase of halal food research equipment for Fatoni University
-                        </a>
-                    </section>
-                <p class="News-P">
-                    On August 7, 2022, the Faculty of Science and Technology held an opening ceremony for the Halal Food
-                    Research Laboratory
-                    sign. Ustasam Muhammad Nazir Chuya' al-Mutairi, representative from Kuwait's Ministry of Public
-                    Charities and Islamic
-                    Affairs, visited Fatoni University and various projects. of the university
-                </p>
-                </section>
-                <section class="News-item">
-                    <section class="News-item">
-                        <section class="item">
-                            <img class="News-img" src="img/fn650724p1.jpg" alt="image">
-                        <a class="News-title" href="https://www.google.com/" target="_blank">
-                            Wichit Samphan Phuket Muslim Club, Phuket Province visited and exchanged knowledge
-                        </a>
-                    </section>
-                <p class="News-P">
-                    On July 24, 2022, Wichit Muslim Club, Phuket Phuket Led by Imam Daris, Transformed Chinese and the
-                    delegation visited
-                    and exchanged knowledge on: Integrated Learning Management Science Management, Koimi Asst. Prof. Dr.
-                    Muhammassagri
-                    Manyunu, Dean of the Faculty Education and the faculty welcomed them at the university council room,
-                    2nd floor, Mata
-                    Foundation Building. Fatoni University
-                </p>
-            </section>
-          </section>
-          <a class="all_news_link" href="https://www.google.com/">View all news</a>
-        </section>
-          
-          <script>
-          function openNews(evt, NewsType) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(NewsType).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-          </script>
-    </section>
-<!--
         <section>
             <ul class="allTabs">
                 <li class="tab_first_item_active">News Release</li>
                 <li class="tab_second_item_active">Student Recruitment News</li>
             </ul>
         </section>
-
+        <br>
         <section class="nested-container">
             <section class="item_p">
                 <section class="item">
-                    <img src="img/fn651112p1.jpg" alt="image">
-                    <a href="https://www.google.com/" target="_blank">
+                    <img src="img/fn651112p1.jpg" alt="image" class="hover_content">
+                    <a href="https://www.youtube.com/" target="_blank" class="hover_content">
                         Welcoming Lieutenant General Shanti Sakuntanaga, Commander of the 4th Army Region/Director
                         of
-                        Internal Security Operations Region 4.
+                        Internal Security Operations Region 4
                     </a>
                 </section>
-                <p>
+                <p class="hover_content">
                     Saturday, November 12, 2022 at 11:00 a.m. Associate Professor Dr. Ismail Lutfi Japakiya,
                     President
                     of Fatoni University
@@ -434,12 +285,12 @@
             </section>
             <section class="item_p">
                 <section class="item">
-                    <img src="img/fn651005p1.jpg" alt="image">
-                    <a href="https://www.google.com/" target="_blank">
+                    <img src="img/fn651005p1.jpg" alt="image" class="hover_content">
+                    <a href="https://www.youtube.com/@FTUtv_Channel" target="_blank" class="hover_content">
                         FTU confers an honorary doctorate degree in political science to General Surayut Chulanont.
                     </a>
                 </section>
-                <p>
+                <p class="hover_content">
                     Fatoni University Organized an honorary doctorate degree in political science awarding ceremony
                     to
                     General Surayut
@@ -457,12 +308,12 @@
             </section>
             <section class="item_p">
                 <section class="item">
-                    <img src="img/fn650904p1.jpg" alt="image">
-                    <a href="https://www.google.com/" target="_blank">
+                    <img src="img/fn650904p1.jpg" alt="image" class="hover_content">
+                    <a href="https://www.facebook.com/FTUtv" target="_blank" class="hover_content">
                         17th Graduation Ceremony Fatoni University
                     </a>
                 </section>
-                <p>
+                <p class="hover_content">
                     On September 4, 2022, Mr. Wan Muhammad Noor Matha, President of Fatoni University Council
                     Presided
                     over the 17th
@@ -474,14 +325,14 @@
 
             <section class="item_p">
                 <section class="item">
-                    <img src="img/fn650809p1.jpg" alt="image">
-                    <a href="https://www.google.com/" target="_blank">
+                    <img src="img/fn650809p1.jpg" alt="image" class="hover_content">
+                    <a href="https://ftu.ac.th/" target="_blank" class="hover_content">
                         Attended the signing ceremony of the Memorandum of Understanding (MOU) of the Entrepreneur
                         Development Network (TED
                         Fellow) for the year 2022
                     </a>
                 </section>
-                <p>
+                <p class="hover_content">
                     On August 9, 2022, Fatoni University in collaboration with the Technology and Innovation
                     Entrepreneurship Development
                     Fund (TED Fund), Ministry of Higher Education, Science, Research and Innovation, (Phra.) and
@@ -498,12 +349,12 @@
 
             <section class="item_p">
                 <section class="item">
-                    <img src="img/fn650807p1m.JPG" alt="image">
-                    <a href="https://www.google.com/" target="_blank">
+                    <img src="img/fn650807p1m.JPG" alt="image" class="hover_content">
+                    <a href="http://reg.ftu.ac.th/registrar/home.asp" target="_blank" class="hover_content">
                         Kuwait contributes to the purchase of halal food research equipment for Fatoni University
                     </a>
                 </section>
-                <p>
+                <p class="hover_content">
                     On August 7, 2022, the Faculty of Science and Technology held an opening ceremony for the Halal Food
                     Research Laboratory
                     sign. Ustasam Muhammad Nazir Chuya' al-Mutairi, representative from Kuwait's Ministry of Public
@@ -514,12 +365,13 @@
 
             <section class="item_p">
                 <section class="item">
-                    <img src="img/fn650724p1.jpg" alt="image">
-                    <a href="https://www.google.com/" target="_blank">
+                    <img src="img/fn650724p1.jpg" alt="image" class="hover_content">
+                    <a href="http://reg.ftu.ac.th/registrar/calendar.asp?avs243435416=1" target="_blank"
+                        class="hover_content">
                         Wichit Samphan Phuket Muslim Club, Phuket Province visited and exchanged knowledge
                     </a>
                 </section>
-                <p>
+                <p class="hover_content">
                     On July 24, 2022, Wichit Muslim Club, Phuket Phuket Led by Imam Daris, Transformed Chinese and the
                     delegation visited
                     and exchanged knowledge on: Integrated Learning Management Science Management, Koimi Asst. Prof. Dr.
@@ -529,15 +381,11 @@
                     Foundation Building. Fatoni University
                 </p>
             </section>
-
-            <a class="all_news_link" href="https://www.google.com/">View all news</a>
-
         </section>
-
-
-
+        <a class="all_news_link" href="https://en.wikipedia.org/wiki/FTU">View all news</a>
     </section>
--->
+    <br>
+
     <!--nav hover content section end-->
 
 
