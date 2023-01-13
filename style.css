@@ -313,7 +313,6 @@ a {
     background-color: var(--main-color-1);
     width: 100%;
     padding: 10px 10px;
-    margin: 0;
     align-items: center;
     
     
@@ -321,6 +320,7 @@ a {
 .Vedio-list{
     position: relative;
     padding-left: 6px;
+    align-items:center; 
 }
 
 /*---------Fonts used-----------*/
@@ -333,7 +333,6 @@ a {
     --main-color-1-dark:hsl(var(--hue-1), 41%, 20%);
     --bg-color:hsl(var(--hue-2), 3%, 93%);
 }
-
 
 /*-----------------administrator section style------------------*/
 
@@ -445,7 +444,6 @@ a {
     top:13%;
     left: 60%;
     position: absolute;
-
 }
 aside {
     width: 40%;
@@ -475,7 +473,6 @@ aside {
     text-align: center;
 }
 /* --------------- 1000px Screens --------------- */
-
 @media (max-width: 1000px) {
     .administrator .container{
         display: block;
@@ -560,11 +557,6 @@ aside {
         width: 2vw;
         height: auto;
     }
-   
-
-   
-
-
 }
 
 /* --------------- 500px Screens --------------- */
