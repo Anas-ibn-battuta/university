@@ -73,90 +73,84 @@ body {
 
 /*-----------------Navbar styling------------------*/
 
-.dropdown {
+.dropdown{
     position: relative;
     z-index: 100;
 }
-
 nav ul {
-    position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     background-color: #417d14;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: 'Prompt', sans-serif;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
+    display: flex;
+  }
+  
+  nav ul li {
+    position:relative;
+  }
+  
+  nav ul li a {
+    display: flex;
     padding: 1rem;
-    text-decoration: none;
     font-size: 1.1rem;
+    text-decoration: none;
     color: rgb(255, 255, 255);
-    margin-left: 40px;
-}
-
-nav ul li a:hover {
+  }
+  nav ul li a:hover{
     background: rgb(43, 43, 43);
-    color: #417d14;
+    color:#417d14;
     display: block;
-}
 
-nav ul li ul {
-    position: absolute;
+  }
+
+  
+  nav ul li ul {
+    position: relative;
     top: 100%;
     left: 0;
     background: rgb(43, 43, 43);
     width: 200px;
     display: none;
     text-decoration: none;
-
-}
-
-nav ul li:hover ul {
+  }
+  
+  nav ul li:hover ul {
     display: none;
-}
-
-.checkbtn {
-    color: #fff;
-    font-size: 25px;
-    margin: 10px;
-    margin-left: 100px;
-    cursor: pointer;
-    display: none;
-}
-
-.submenu {
+  }
+ 
+.submenu{
     position: absolute;
     background-color: rgb(43, 43, 43);
     left: 0;
-    width: 140px;
+    width: 250px;
     display: none;
 }
-
-.submenu2 {
+.submenu2{
     position: absolute;
     left: 100%;
-    width: 170px;
+    width: 250px;
     top: 0;
     background-color: rgb(43, 43, 43);
     display: none;
 }
-
-.menu li:hover>.submenu {
+.menu li:hover > .submenu{
     display: block;
 }
-
-.submenu li:hover>.submenu2 {
+.submenu li:hover > .submenu2{
     display: block;
 }
+.checkbtn{
+  font-size: 25px;
+  margin-left: 400px;
+  color: #ffffff;
+  line-height: 40px;
+  padding-top:7px ;
+  cursor: pointer;
+  display: none;
+}
+
 
 /*------------ hover_content style ------------*/
 
@@ -281,15 +275,15 @@ a.hover_content:active {
     background-color: var(--main-color-1);
     width: 100%;
     padding: 10px 10px;
-    margin: 0;
     align-items: center;
-
-
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .Vedio-list {
     position: relative;
-    padding-left: 6px;
+    padding-left: 50px;
 }
 
 /*---------Fonts used-----------*/
@@ -303,7 +297,6 @@ a.hover_content:active {
     --main-color-1-dark: hsl(var(--hue-1), 41%, 20%);
     --bg-color: hsl(var(--hue-2), 3%, 93%);
 }
-
 
 /*-----------------administrator section style------------------*/
 
@@ -428,7 +421,6 @@ a.hover_content:active {
     top: 13%;
     left: 60%;
     position: absolute;
-
 }
 
 aside {
@@ -465,7 +457,6 @@ aside {
 }
 
 /* --------------- 1000px Screens --------------- */
-
 @media (max-width: 1000px) {
     .administrator .container {
         display: block;
@@ -564,9 +555,9 @@ aside {
         width: 2vw;
         height: auto;
     }
+   
 
-
-
+   
 
 
 }
@@ -603,7 +594,6 @@ aside {
         position: relative;
         width: 3vw;
     }
-
 
 }
 
@@ -908,6 +898,10 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #417d14;
+    
+
+    
 }
 
 .boxx {
