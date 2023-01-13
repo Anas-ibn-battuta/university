@@ -611,6 +611,7 @@ aside {
 
 #slider {
     overflow: hidden;
+    text-align: center;
 }
 
 #slider figure {
@@ -618,58 +619,46 @@ aside {
     width: 650%;
     margin: 0;
     left: 0;
-    animation: 25s slider infinite;
+    transition: left 2s;
 }
 
 #slider figure img {
     float: left;
     width: 16%;
 }
+.buttons{
+  position: relative;
+  top: 5px;
+}
 
-@keyframes slider {
-    0% {
-        left: -3%;
-    }
+.buttons a{
+  display:inline-block;
+  margin: 3px;
+  height: 15px;
+  width: 80px;
+  background-color: rgba(207, 207, 207, 0.5);
+}
 
-    20% {
-        left: -3%;
-    }
+.buttons a:hover{
+  display:inline-block;
+  background-color: rgba(22, 77, 25, 0.699);
+}
 
-    25% {
-        left: -105%;
-    }
 
-    35% {
-        left: -105%;
-    }
-
-    45% {
-        left: -210%;
-    }
-
-    50% {
-        left: -210%;
-    }
-
-    65% {
-        left: -315%;
-    }
-
-    75% {
-        left: -315%;
-    }
-
-    80% {
-        left: -420%;
-    }
-
-    95% {
-        left: -420%
-    }
-
-    100% {
-        left: -523%;
-    }
+#slide-1:target ~ .image-container{
+  left:-3%;
+}
+#slide-2:target ~ .image-container{
+  left:-105%;
+}
+#slide-3:target ~ .image-container{
+  left:-210%;
+}
+#slide-4:target ~ .image-container{
+  left:-315%;
+}
+#slide-5:target ~ .image-container{
+  left:-420%;
 }
 
 /*------Flag-slider style------*/
@@ -903,6 +892,11 @@ aside {
     .footer-img {
         padding-left: 410px;
     }
+
+    .buttons a{
+        height: 10px;
+        width: 50px;
+      }
 
 }
 
