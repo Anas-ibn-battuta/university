@@ -26,14 +26,14 @@ body{
     width: 260px;
     position: relative;
     left: 29px;
-    top: 6vh;    
+    top: 3vh;    
 }
 .social-logo{
     position: absolute; 
     padding: 0%;
     right: 0%;
     top: 26px;
-    width: 400px;
+    width: auto;
     height: 75px;
 }
 .SL-img{
