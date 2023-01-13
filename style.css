@@ -628,7 +628,7 @@ aside {
     width: 650%;
     margin:0;
     left:0;
-    animation: 25s slider infinite;
+    transition: left 2s;
 }
 #slider figure img{
     float:left;
@@ -652,7 +652,6 @@ aside {
   background-color: rgba(22, 77, 25, 0.699);
   transition: background-color 0.5s;
 }
-
 
 #slide-1:target ~ .image-container{
   left:-3%;
