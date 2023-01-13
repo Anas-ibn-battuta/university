@@ -277,8 +277,8 @@ a.hover_content:active {
     padding: 10px 10px;
     align-items: center;
     display:flex;
-justify-content: center;
-flex-wrap: wrap; 
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .Vedio-list {
