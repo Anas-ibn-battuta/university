@@ -320,8 +320,12 @@ a {
 }
 .Vedio-list{
     position: relative;
+<<<<<<< Updated upstream
     padding-left: 6px;
     align-items:center; 
+=======
+    padding-left: 50px;
+>>>>>>> Stashed changes
 }
 
 /*---------Fonts used-----------*/
