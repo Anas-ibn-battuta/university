@@ -384,7 +384,7 @@ a {
     border-radius: 4%;
     background-color: var(--main-color-1);
     padding: 12px 10px;
-    width: 37vh;
+    width: 40vh;
     justify-self: center;
     align-items: center;
     text-align: center;
@@ -496,6 +496,7 @@ aside {
         padding: 1rem 0;
         gap: 3px;
       }
+    
       .aside-right{
         width: 20%;
         height: 5%;
@@ -686,16 +687,12 @@ aside {
 
 .footer_green h1{
     border: 1px solid #ffffff;
-    margin-left: 100px;
-    margin-top: -20px;
+    margin-left: 110px;
     font-size: 40px;
     width: 400px;
     text-align: center;
     color: #ffffff;
-    padding-left: 12px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-right: 12px;
+    padding: 30px;
 }
 
 .detail{
@@ -740,16 +737,18 @@ aside {
     height: 50px;
     width: 100rem;
     position: relative;
-    bottom: -150px;
+    bottom: -130px;
+    
 
 }
 
 .footer_black p{
+    position: absolute;
     font-size: 1rem;
     color: #ffffff;
-    text-align: center;
+    left: 600px;
     font-family: sans-serif;
-    padding-top: 15px;
+    padding-top: 18px;
 }
 
 .footer_black span{
@@ -759,35 +758,77 @@ aside {
 .footer-img{
     width: 30px;
     height: 30px;
-    left: 59%;
-    position: relative;
-    bottom: 50%;
+    left: 52%;
+    position: absolute;
+    bottom: 20%;
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     *{
         flex-direction: column;
     }
     
     .footer_green{
-        height: 600px;
+        height: 450px;
         position: relative;
+    }
+    .footer_green h1{
+       margin-left: 45px;
+    }
+    
+    .detail{
+        left: 180px;
     }
 
     .info {
-       display: flex;
        position: absolute;
        width: 300px;
-       left: 160px;
-       top: 300px;
+       left: 80px;
+       top: 250px;
 
+    }
+    .footer_black{
+        bottom: -300px;    
+    }
+    .footer_black p{
+        left: 70px;
     }
 
     .footer-img{
-       padding-left: 410px;
+       left: 19%;
+    }  
+}
+@media (max-width: 992px){
+    .footer_green{
+        background-color: aqua;
+        position: relative;
+        height: 500px;
     }
-   
+    .footer_green h1{
+        margin-left: 400px;
+    }
+    .detail{
+        left: 565px;
+    }
+
+    .info {
+       position: absolute;
+       width: 300px;
+       left: 450px;
+       top: 250px;
+    }
+    .footer_black{
+        bottom: -330px;    
+    }
+    
+    .footer_black p{
+        left: 430px;
+    }
+
+    .footer-img{
+       left: 41%;
+    }  
 }
 /*table style*/
 .containerx{
