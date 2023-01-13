@@ -594,6 +594,7 @@ aside {
         position: relative;
         width: 3vw;
     }
+    
       
 
 }
@@ -857,27 +858,39 @@ aside {
 }
 /*table style*/
 .containerx{
-    width:90%;
-    padding:20px;
+    width:70%;
+    height: 70% ;
+    padding:2%;
     margin:100px auto;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #417d14;
+    
+
+    
 }
 .boxx{
    
-    transition: 1s;
-    
+    margin: 10px;
 }
 .boxx img{
-display: block;
-width: 100%;
-border-radius: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+
 
 }
-.boxx:hover{
+.boxx img:hover{
     transform: scale(1.1);
     z-index: 2;
+}
+
+.boxx h1{
+    
+    text-align: center;
+    color: #000;
 }
  
 
