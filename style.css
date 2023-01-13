@@ -621,6 +621,7 @@ aside {
 
 #slider{
     overflow:hidden;
+    text-align: center;
 }
 #slider figure{
     position:relative;
@@ -873,6 +874,11 @@ aside {
     .footer-img{
        padding-left: 410px;
     }
+
+    .buttons a{
+        height: 10px;
+        width: 50px;
+      }
    
 }
 /*table style*/
