@@ -632,6 +632,7 @@ aside {
 .buttons a:hover{
   display:inline-block;
   background-color: rgba(22, 77, 25, 0.699);
+  transition: background-color 0.5s;
 }
 
 
