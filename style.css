@@ -144,7 +144,7 @@ nav ul {
 
 
 /*-----------------TabBar section styling------------------*/
-.tab {
+/* .tab {
     overflow: hidden;
     margin-top: 40px;
     border: 1px solid #ccc;
@@ -223,35 +223,31 @@ nav ul {
 .all_news_link:hover {
     color: var(--main-color-1);
     font-weight: 600;
-}
-  /*==============
+} */
+
 .allTabs {
-    width: 100%;
-    height: 5vh;
     margin-top: 20px;
-    padding: 5px;
     border: 1px solid black;
+    padding: 10px;
     background-color: black;
     color: white;
 }
 
 .allTabs li {
     /* need to make sure that @media change inline to block for web mobile*/
-    /* need to make tab active to change contents 
+    /* need to make tab active to change contents */
     display: inline;
-    position: relative;
-    margin: 0;
-    padding: 3px;
-    font-size: 1rem;
+    margin: 10px;
+    padding: 5px;
     border: 1px solid black;
+    cursor: default;
 }
 
 .allTabs li:hover {
-    background-color: white;
-    color: black;
+    background-color: green;
 }
 
-img {
+img.hover_content {
     width: 300px;
     height: auto;
     margin: auto;
@@ -271,7 +267,6 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; 
 }
 
 
@@ -286,18 +281,39 @@ img {
     flex-basis: 33%;
     display: inline;
     flex-direction: row;
-    /* justify-content: center; 
 }
 
 
-p {
+p.hover_content {
     padding-left: 30px;
+    color: black;
 }
 
-a {
+a.hover_content:link {
     font-size: 24px;
     font-weight: bolder;
     color: green;
+    text-decoration: none;
+}
+
+a.hover_content:visited {
+    font-size: 24px;
+    font-weight: bolder;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a.hover_content:hover {
+    font-size: 24px;
+    font-weight: bolder;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a.hover_content:active {
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
     text-decoration: none;
 }
 
@@ -306,8 +322,11 @@ a {
     margin: auto;
     text-decoration: underline;
     margin-bottom: 10px;
+    color: green;
+    font-size: 24px;
+    font-weight: bolder;
 }
-*/
+
 /*---------Video section style -----------*/
 .Video-section{
     background-color: var(--main-color-1);
