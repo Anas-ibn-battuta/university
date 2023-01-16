@@ -84,12 +84,21 @@ nav ul {
   }
   
   nav ul li a {
+<<<<<<< Updated upstream
     display: flex;
     padding: 1rem;
+=======
+    display: block;
+    padding: 0.5rem;
+>>>>>>> Stashed changes
     text-decoration: none;
     font-size: 1rem;
     color: rgb(255, 255, 255);
+<<<<<<< Updated upstream
    
+=======
+    margin-left: 4px;
+>>>>>>> Stashed changes
   }
   nav ul li a:hover{
     background: rgb(43, 43, 43);
@@ -123,8 +132,13 @@ nav ul {
 .submenu{
     position: absolute;
     background-color: rgb(43, 43, 43);
+<<<<<<< Updated upstream
     left: 0;
     width: 250px;
+=======
+    left: 22%;
+    width: 240px;
+>>>>>>> Stashed changes
     display: none;
 }
 .submenu2{
@@ -541,9 +555,9 @@ aside {
 
 }
 
-/* --------------- 768px Screens --------------- */
+/* --------------- 992px Screens --------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .administrator .container{
         display: block;
         padding: 40px;
@@ -586,9 +600,9 @@ aside {
 
 }
 
-/* --------------- 500px Screens --------------- */
+/* --------------- 600px Screens --------------- */
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .admin-sub-title{
         left: 0;
     }
@@ -706,34 +720,34 @@ aside {
     margin: 5px;
 }
 .dots label:hover {background: var(--main-color-1);}
-#img1:checked ~ .m1 {
+#img1:checked ~ .flag-img {
     margin-left: -1%;
 }
-#img2:checked ~ .m2 {
+#img2:checked ~ .flag-img {
     margin-left: -6%;
 }
-#img3:checked ~ .m3 {
+#img3:checked ~ .flag-img {
     margin-left: -9%;
 }
-#img4:checked ~ .m4 {
+#img4:checked ~ .flag-img {
     margin-left: -12%;
 }
-#img5:checked ~ .m5 {
+#img5:checked ~ .flag-img {
     margin-left: -45%;
-}#img6:checked ~ .m6 {
+}#img6:checked ~ .flag-img {
     margin-left: -67%;
-}#img7:checked ~ .m7 {
+}#img7:checked ~ .flag-img {
     margin-left: -90%;
-}#img8:checked ~ .m8 {
+}#img8:checked ~ .flag-img {
     margin-left: -112%;
-}#img9:checked ~ .m9 {
+}#img9:checked ~ .flag-img {
     margin-left: -134.5%;
-}#img10:checked ~ .m10 {
+}#img10:checked ~ .flag-img {
     margin-left: -157%;
-}#img11:checked ~ .m11 {
+}#img11:checked ~ .flag-img {
     margin-left: -200%;
 }
-#img12:checked ~ .m12 {
+#img12:checked ~ .flag-img {
     margin-left: -300%;
 }
 /*------go to top button style---*/
