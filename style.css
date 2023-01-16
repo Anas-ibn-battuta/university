@@ -84,21 +84,12 @@ nav ul {
   }
   
   nav ul li a {
-<<<<<<< Updated upstream
-    display: flex;
-    padding: 1rem;
-=======
     display: block;
     padding: 0.5rem;
->>>>>>> Stashed changes
     text-decoration: none;
     font-size: 1rem;
     color: rgb(255, 255, 255);
-<<<<<<< Updated upstream
-   
-=======
     margin-left: 4px;
->>>>>>> Stashed changes
   }
   nav ul li a:hover{
     background: rgb(43, 43, 43);
@@ -132,13 +123,8 @@ nav ul {
 .submenu{
     position: absolute;
     background-color: rgb(43, 43, 43);
-<<<<<<< Updated upstream
-    left: 0;
-    width: 250px;
-=======
     left: 22%;
     width: 240px;
->>>>>>> Stashed changes
     display: none;
 }
 .submenu2{
