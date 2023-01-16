@@ -123,7 +123,7 @@ nav ul {
 .submenu{
     position: absolute;
     background-color: rgb(43, 43, 43);
-    left: 22%;
+    left: 3%;
     width: 240px;
     display: none;
 }
