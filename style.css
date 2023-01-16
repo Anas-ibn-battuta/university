@@ -74,9 +74,10 @@ nav ul {
     padding: 0;
     display: flex;
     background-color: #417d14;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
     font-family: 'Prompt', sans-serif;
+    
   }
   
   nav ul li {
@@ -87,9 +88,9 @@ nav ul {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
-    margin-left: 4px;
+    margin-left: 30px;
   }
   nav ul li a:hover{
     background: rgb(43, 43, 43);
@@ -123,7 +124,7 @@ nav ul {
 .submenu{
     position: absolute;
     background-color: rgb(43, 43, 43);
-    left: 22%;
+    left:30px;
     width: 240px;
     display: none;
 }
