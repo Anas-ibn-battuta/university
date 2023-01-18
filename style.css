@@ -249,10 +249,9 @@ nav ul {
 }
 
 img.hover_content {
-    width: 300px;
+    width: 55%;
     height: auto;
     margin: auto;
-    display: inline;
     float: left;
     padding-right: 10px;
     padding-left: 30px;
@@ -274,16 +273,10 @@ img.hover_content {
 .item_p {
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    flex-basis: 33.3%;
     padding-left: 30px;
+    padding-top: 20px;
 }
-
-.item {
-    flex-basis: 33%;
-    display: inline;
-    flex-direction: row;
-}
-
 
 p.hover_content {
     padding-left: 30px;
@@ -305,7 +298,7 @@ a.hover_content:visited {
 }
 
 a.hover_content:hover {
-    font-size: 24px;
+    font-size: 24.5px;
     font-weight: bolder;
     color: darkgreen;
     text-decoration: none;
@@ -539,7 +532,9 @@ aside {
     nav ul li a{
         display: none;
     }
-
+    .item_p {
+        flex: 50%;
+    }
 }
 
 /* --------------- 992px Screens --------------- */
@@ -614,7 +609,9 @@ aside {
         position: relative;
         width: 3vw;
     }
-      
+    .item_p {
+        flex: 100%;
+    }
 
 }
 
