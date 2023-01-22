@@ -17,34 +17,75 @@ body{
   }
 /*------------header style ------------*/
 .header-section{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+   
+    
+    /*
     background-color: rgb(250, 246, 246);
     position: relative;
     width: auto;
     height: 150px;
+    */
 }
-.ftulogo{
-    width: 260px;
+.ftulogo{   
+    height: 3rem;
+    margin-left:1rem ;
+    margin-top: 10px;
+   /* width: 260px;
     position: relative;
     left: 29px;
-    top: 3vh;    
+    top: 3vh; */    
 }
 .social-logo{
-    position: absolute; 
+    margin-top:1vh 0 ;
+    list-style-type: none;
+    background-color: white(100, 6, 6);
+    display: flex;
+    flex-direction: row;
+    /*position: absolute; 
     padding: 0%;
     right: 0%;
     top: 26px;
     width: auto;
-    height: 75px;
+    height: 75px;*/
 }
 .SL-img{
-    width: 8vw;
+    width: 3.5rem;
+    height:5rem ;
+    /*
     height: 15vh;
     margin: auto;
-    padding: 0;
+    padding: 0;    */
 }
+/*
 .social-logo .SL-img{
     margin: auto;
 }
+*/
+/*for decktop header */
+@media only screen and (min-width: 600px){
+    .header-section{
+        height: 20vh;
+    }
+    .ftulogo{
+      margin: 1.5rem 0;
+        width: 20rem;
+        height: 10vh;
+        flex: 1 1 0;
+    }
+    
+    .SL-img{
+        width: 9rem;
+        height: auto;
+        flex: 1 1 0;
+        
+    }
+}
+
+/*for the flag*/
 .flag-logo{   
     position: relative; 
     width: auto;
@@ -872,7 +913,7 @@ aside {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     *{
         flex-direction: column;
     }
