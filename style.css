@@ -912,7 +912,7 @@ aside {
     justify-content: center;
 }
 .boxx{
-   
+    margin: 6px;
     transition: 0.25s;
     
 }
@@ -920,6 +920,7 @@ aside {
 display: block;
 width: 100%;
 border-radius: 10px;
+
 
 }
 .boxx:hover{
