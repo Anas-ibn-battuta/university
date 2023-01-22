@@ -910,22 +910,30 @@ aside {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    background-color: aquamarine;
 }
 .boxx{
     margin: 6px;
-    transition: 0.25s;
-    
+    transition: 0.25s; 
 }
 .boxx img{
 display: block;
 width: 100%;
 border-radius: 10px;
-
-
 }
 .boxx:hover{
     transform: scale(1.1);
     z-index: 2;
+}
+.card{
+    background-color: azure;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    margin: 2px;
+}
+.texx{
+    text-align: center;
+    
 }
  
 
