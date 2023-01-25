@@ -12,8 +12,8 @@ body{
 
 }
 ::selection{
-    background-color: hsl(116, 42%, 30%);
-    color:#fff;
+    background-color: hsl(113, 44%, 76%);
+    color:rgb(86, 184, 99);
   }
 /*------------header style ------------*/
 .header-section{
@@ -75,8 +75,10 @@ nav ul {
     display: flex;
     background-color: #417d14;
     justify-content:center;
+    list-style: none;
     flex-wrap: wrap;
     font-family: 'Prompt', sans-serif;
+
     
   }
   
@@ -102,10 +104,12 @@ nav ul {
     position: relative;
     top: 100%;
     left: 0;
+    text-align: left;
     background: rgb(43, 43, 43);
     width: 200px;
     display: none;
     text-decoration: none;
+    list-style: none;
     
   }
   
@@ -708,31 +712,31 @@ aside {
     margin-left: -1%;
 }
 #img2:checked ~ .flag-img {
-    margin-left: -6%;
+    margin-left: -3%;
 }
 #img3:checked ~ .flag-img {
-    margin-left: -9%;
+    margin-left: -4%;
 }
 #img4:checked ~ .flag-img {
-    margin-left: -12%;
+    margin-left: -5%;
 }
 #img5:checked ~ .flag-img {
-    margin-left: -45%;
+    margin-left: -6%;
 }#img6:checked ~ .flag-img {
-    margin-left: -67%;
+    margin-left: -10%;
 }#img7:checked ~ .flag-img {
-    margin-left: -90%;
+    margin-left: -11%;
 }#img8:checked ~ .flag-img {
-    margin-left: -112%;
+    margin-left: -11%;
 }#img9:checked ~ .flag-img {
-    margin-left: -134.5%;
+    margin-left: -13%;
 }#img10:checked ~ .flag-img {
-    margin-left: -157%;
+    margin-left: -15%;
 }#img11:checked ~ .flag-img {
-    margin-left: -200%;
+    margin-left: -20%;
 }
 #img12:checked ~ .flag-img {
-    margin-left: -300%;
+    margin-left: -30%;
 }
 /*------go to top button style---*/
 .gotopbtn {
@@ -846,9 +850,10 @@ aside {
 }
 
 .footer_black p{
+    position: relative;
     font-size: 1rem;
     color: #ffffff;
-    left: 600px;
+    left:38%;
     font-family: sans-serif;
     padding-top: 18px;
 }

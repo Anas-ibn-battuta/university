@@ -9,19 +9,106 @@
     <meta name="description" content="FatoniUniversity website">
     <meta name="keywords" content="Information technology, university">
     <meta name="author" content="IT department">
-    <link rel="stylesheet" href="../../../../../../../../../style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Fatoni university</title>
+    <title>proof Application Documents</title>
+
+    <style>
+      html,body{
+        scroll-behavior: smooth;
+        background-image: linear-gradient(90deg,rgb(255, 255, 255), rgb(174, 207, 178) 50%,rgb(237, 255, 222),rgb(237, 255, 222) );
+      }
+        .AtA {
+          padding: 4%;
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+      
+        .headerAtA {
+          position: relative;
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: 600;
+          text-decoration: none;
+          color: var(--main-color-1) ;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border-left: 3px solid var(--main-color-1);
+          padding: .13rem .75rem;
+        }
+      
+        .headerAtA::after {
+          content: "";
+          position: absolute;
+          color: black;
+          width: 0;
+          height: 15px;
+          border-radius: 10px;
+          background-color: var(--main-color-1);
+          bottom: 0%;
+          left: 9px;
+          z-index: -1;
+          opacity: 0.9;
+          transition: 0.5s;
+        }
+      
+        .headerAtA:hover {
+          color: rgb(23, 18, 14);
+          font-weight: 1000;
+          text-decoration: none;
+        }
+      
+        .headerAtA:hover:after {
+          width: 90%;
+          opacity: 0.9;
+        }
+        .card2{
+        position: absolute;
+        display: inline;
+        background-color: rgb(255, 254, 251);
+        width: 40vw;
+        height: 50vh;
+        z-index: 0;
+        border-radius:4px ;
+        left: 30%;
+        top:10%;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.5), 3px 3px 8px rgba(0,0,0,0.4);-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+       }
+      .card2 h3{
+        position: relative;
+        font-size: 2.5rem;
+        margin: 9% 4%;
+        line-height: 200%;
+        text-align: center;
+        color: #000;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+      .title{
+        position: relative;
+        display: inline;
+        text-align: center;
+        left: 130%;
+        top: -20%;
+        font-size: 2rem ;
+      }
+      .gotobtn{color: aliceblue; background-image: linear-gradient( rgb(218, 57, 57),  rgb(158, 4, 4)50%); width: 40%; height: 10%; border-radius: 5px; text-align: center; padding:2%; margin: 0 30%;}
+      .gotobtn a{font-size: medium; text-decoration: none; color: aliceblue;}
+      .gotobtn:hover ,.gotobtn:active {filter: drop-shadow(2px 3px 2px rgb(93, 93, 93)); }
+        </style>
 </head>
 <body>
     <!--Header section start [FTU logo on left + Social media links on right writing by yaser abulkhair]-->
     <header class="header-section">
         <!--for ftu logo-->
-        <a href=""><img class="ftulogo" src="../../../img/head-ftu.png" alt="" /></a>
+        <a href="../index.html"><img class="ftulogo" src="../../../img/head-ftu.png" alt="" /></a>
         <!--for social logo-->
         <section class="social-logo">
             <a href="https://www.facebook.com/FatoniUniversity/"><img class="SL-img" src="../../../img/facebooklogo.png"
@@ -120,7 +207,7 @@
               <li><a href="../../../addmisson-to-education/Tuition-free.html">Tuition Fees</a></li>
               <li><a href="../../../addmisson-to-education/scholarship.html">scholarship</a></li>
               <li><a href="../../../addmisson-to-education/Proof-app-doc.html">Proof of application documents</a></li>
-              <li><a href="../../../addmisson-to-education/A-Calender.html">Academic Calendar 2020</a></li>
+              <li><a href="../../../addmisson-to-education/A-Calender.html">Academic Calendar 2023</a></li>
             </ul>
           </li>
 
@@ -178,7 +265,7 @@
 
 
           <li>
-            <a href="../../../ftu-almuni.html">FTU ALMUNI</a>
+            <a href="../../../FTU-Alumni/FTU-Alumni.html">FTU ALMUNI</a>
           </li>
 
 
@@ -203,11 +290,21 @@
     </div>   
      <!--Navigation bar section end-->
 
-<section style="height: 100vh;"></section>
-
-
-
-
+<section class="AtA" style="height: 40vh;">
+ <a href="/addmisson-to-education/addmisson-to-education.html" class="headerAtA">Admission to Education</a>
+ <h1 style="display: flex; font-size: 2rem; color: rgb(0, 0, 0); margin-top: 2%; text-shadow: 0 1px 1px #000;">Tuition Fee</h1>
+</section>
+<section style="height: 60vh; align-items: center; position: relative; display: inline-block;">
+  <h1 class="title">To  access this page choose :</h1>
+  <div class="card2">
+    <h3>Either You can Access By register to the log in page </h3>
+    <div class="gotobtn"><a href="https://reg.ftu.ac.th/registrar/home.asp"><p>Log in</p></a></div>
+  </div>
+  <div class="card2" style="left: 190%;" >
+    <h3>Or by check The crriculums window</h3>
+    <div class="gotobtn"><a href="../crriculum/crriculum.html"><p>See More In crriculum</p></a></div>
+  </div>
+</section>
 
 
 <!--Footer section-->
@@ -226,7 +323,7 @@
         </div><!--I dont know what page I have to link to--></div>
       <div class="footer_black">
         <p>Designed by <span>Fatoni</span> University</p>
-        <img class="footer-img" src="../../../img/Ftu_logo.png">
+        <img class="footer-img" src="../img/Ftu_logo.png">
       </div>
 </footer>
 <!--Footer end-->

@@ -1,34 +1,142 @@
-<!DOCTYPE html>
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="imsubject/x-icon" href="../../../img/FTU-LOGO.png">
+    <link rel="icon" type="imsubject/x-icon" href="../img/FTU-LOGO.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FatoniUniversity website">
     <meta name="keywords" content="Information technology, university">
     <meta name="author" content="IT department">
-    <link rel="stylesheet" href="../../../../../../../../../style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Fatoni university</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="resize.js"></script>
+    <script type="text/javascript" src="navtreedata.js"></script>
+    <script type="text/javascript" src="navtree.js"></script>
+    <script type="text/javascript"> $(document).ready(initResizable);</script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="search/searchdata.js"></script>
+    <script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <title>Academic Calendar 2023</title>
 </head>
+<style>
+  body{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(248, 248, 248, 0.6)), url("../img/audience.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .AtA{
+  padding: 4%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  }
+  .headerAtA{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-color-1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 3px solid var(--main-color-1);
+    padding: .13rem .75rem;
+  }
+  .headerAtA::after{
+    content: "";
+    position: absolute;
+    color: aliceblue;
+    width: 0;
+    height: 15px;
+    border-radius:  10px;
+    background-color: var(--main-color-1);
+    bottom: 0%;
+    left: 9px;
+    z-index: -1;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  .headerAtA:hover{
+    color: aliceblue;
+    font-weight: 1000;
+    text-decoration: none;
+  }
+  .headerAtA:hover:after{
+    width: 90%;
+    opacity: 0.5;
+  }
+  .Scard{
+    position: relative;
+    display: block;
+    background-color: var(--main-color-1);
+    width: 80%;
+    height: 80%;
+    margin:0% 9%;
+    padding: 5%;
+    border-radius: 9px;
+    box-shadow: 3px 8px 16px rgba(0,0,0,0.5), 0 6px 6px rgba(0,0,0,0.5);
+  }
+  .titleh{
+    position: relative;
+    display: inline-block;
+    font: 2rem 'Times New Roman', Times, serif;
+    width: max-content;
+    margin-bottom: 6%;
+    color: aliceblue;
+    }
+    div p{
+      display: inline-flex;
+      color: black;
+      line-height: 200%;
+    }
+    .cmbtn{
+      position: relative;
+      display: inline;
+      width: 90%;
+      height: 10%;
+      background-color:rgba(240, 248, 255, 0.507);
+      border: none;
+      margin: 6% 0;
+      font: 1rem 'Times New Roman', Times, serif;
+      font-weight: 600;
+     }
+     .cmbtn i{
+      display: inline-block;
+      margin-left: 2px;
+      transform: translateY(3px);
+      transition: 0.3s margin-left;
+     }
+     .cmbtn i:hover{margin-left: 20px;}
+     .cmbtn:hover{   box-shadow: 3px 8px 16px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); filter: brightness(94%); color: var(--main-color-1);}
+
+  </style>
 <body>
     <!--Header section start [FTU logo on left + Social media links on right writing by yaser abulkhair]-->
     <header class="header-section">
         <!--for ftu logo-->
-        <a href=""><img class="ftulogo" src="../../../img/head-ftu.png" alt="" /></a>
+        <a href="../index.html"><img class="ftulogo" src="../img/head-ftu.png" alt="" /></a>
         <!--for social logo-->
         <section class="social-logo">
-            <a href="https://www.facebook.com/FatoniUniversity/"><img class="SL-img" src="../../../img/facebooklogo.png"
+            <a href="https://www.facebook.com/FatoniUniversity/"><img class="SL-img" src="../img/facebooklogo.png"
                     alt="" /></a>
-            <a href="https://www.youtube.com/user/SuaraHaramain/videos/"><img class="SL-img" src="../../../img/youtubelogo.png"
+            <a href="https://www.youtube.com/user/SuaraHaramain/videos/"><img class="SL-img" src="../img/youtubelogo.png"
                     alt="" /></a>
-            <a href="https://www.facebook.com/FTUtv/"><img class="SL-img" src="../../../img/liveloge.png" alt="" /></a>
+            <a href="https://www.facebook.com/FTUtv/"><img class="SL-img" src="../img/liveloge.png" alt="" /></a>
         </section>
     </header>
     <!--Navigation bar section start [Home + About FTU + Admission + Course + Department + Visit FTU + Contact] with hover function if possible-->
@@ -36,73 +144,73 @@
     <div class="dropdown">
         <nav>
         <ul class="menu">
-          <li><a href="../../../index.html">HOME</a></li>
+          <li><a href="../index.html">HOME</a></li>
 
           <li>
-            <a href="../../../about-ftu/about-ftu.html">ABOUT FTU</a>
+            <a href="../about-ftu/about-ftu.html">ABOUT FTU</a>
           <ul class="submenu">
-            <li><a href="../../../about-ftu/dropdown-about-ftu/History.html">History</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Names-symbols.html">Names and symbols</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Vision.html">Vision, Philosophy, Aspirations and Strategic Issues</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Identity.html">Identity Identity and promotion measures</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Admin-structure.html">Administrative structure</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Uni-EH.html">University Executive House</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Annual-Report.html">Annual Report</a></li>
-            <li><a href="../../../about-ftu/dropdown-about-ftu/Annual-holidays.html">Annual holidays</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/History.html">History</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Names-symbols.html">Names and symbols</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Vision.html">Vision, Philosophy, Aspirations and Strategic Issues</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Identity.html">Identity Identity and promotion measures</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Admin-structure.html">Administrative structure</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Uni-EH.html">University Executive House</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Annual-Report.html">Annual Report</a></li>
+            <li><a href="../about-ftu/dropdown-about-ftu/Annual-holidays.html">Annual holidays</a></li>
           </ul>
           </li>
 
           <li>
-            <a href="../../../bureau/bureau.html">BUREAU</a>
+            <a href="../bureau/bureau.html">BUREAU</a>
             <ul class="submenu">
 
-              <li><a href="../../../bureau/dropdown1/Departments/departments.html">Faculty-level departments</a>
+              <li><a href="../bureau/dropdown1/Departments/departments.html">Faculty-level departments</a>
                 <ul class="submenu2">
 
-                    <li><a href="../../../bureau/dropdown1/Departments/FIS-J/FIS-J.html">Faculty of Islamic Studies and Jurisprudence</a>
+                    <li><a href="../bureau/dropdown1/Departments/FIS-J/FIS-J.html">Faculty of Islamic Studies and Jurisprudence</a>
                     <ul class="submenu2">
-                        <li><a href="../../../bureau/dropdown1/Departments/FIS-J/SM.html">Sharia Major</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FIS-J/Uzuluddine.html">Uzuluddine</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FIS-J/QA.html">Qur'an and Assunnah</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FIS-J/IS.html">Islamic Studies</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FIS-J/D-law.html">Department of Law</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FIS-J/SM.html">Sharia Major</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FIS-J/Uzuluddine.html">Uzuluddine</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FIS-J/QA.html">Qur'an and Assunnah</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FIS-J/IS.html">Islamic Studies</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FIS-J/D-law.html">Department of Law</a></li>
                     </ul>
                     </li>
 
-                    <li><a href="../../../bureau/dropdown1/Departments/FA-SS/FASS.html">Faculty of Arts and Social Sciences</a>
+                    <li><a href="../bureau/dropdown1/Departments/FA-SS/FASS.html">Faculty of Arts and Social Sciences</a>
                     <ul class="submenu2">
-                        <li><a href="../../../bureau/dropdown1/Departments/FA-SS/AM.html">Arabic Major</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FA-SS/DPA.html">Department of Public Administration</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FA-SS/EFB.html">Major in Economics, Finance and Banking</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FA-SS/ML.html">Major in Malay Language</a></li>
-                        <li><a href="../../../bureau/dropdown1/Departments/FA-SS/BA.html">Major in Business Administration</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FA-SS/AM.html">Arabic Major</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FA-SS/DPA.html">Department of Public Administration</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FA-SS/EFB.html">Major in Economics, Finance and Banking</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FA-SS/ML.html">Major in Malay Language</a></li>
+                        <li><a href="../bureau/dropdown1/Departments/FA-SS/BA.html">Major in Business Administration</a></li>
                     </ul>
                     </li>
 
-                    <li><a href="../../../bureau/dropdown1/Departments/FST.html">Faculty of Science and Technology</a></li>
-                    <li><a href="../../../bureau/dropdown1/Departments/FE.html">Faculty of Education</a></li>
-                    <li><a href="../../../bureau/dropdown1/Departments/Assc-college.html">Associates College</a></li>
-                    <li><a href="../../../bureau/dropdown1/Departments/Nursing.html">Faculty of Nursing (Establishment Project)</a></li>
+                    <li><a href="../bureau/dropdown1/Departments/FST.html">Faculty of Science and Technology</a></li>
+                    <li><a href="../bureau/dropdown1/Departments/FE.html">Faculty of Education</a></li>
+                    <li><a href="../bureau/dropdown1/Departments/Assc-college.html">Associates College</a></li>
+                    <li><a href="../bureau/dropdown1/Departments/Nursing.html">Faculty of Nursing (Establishment Project)</a></li>
                 </ul>
             </li>
 
 
-              <li><a href="../../../bureau/dropdown1/B-L-agencies/B-L-agencies.html">Bureau-level agencies</a>
+              <li><a href="../bureau/dropdown1/B-L-agencies/B-L-agencies.html">Bureau-level agencies</a>
               <ul class="submenu2">
 
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/O-President.html">Office of the President</a></li>
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/O-AServices.html">Office of Academic Services</a></li>
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/O-ARP.html">Office of Academic Registration and Promotion</a></li>
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/O-SD.html">Office of Student Development</a></li>
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/R-DB.html">Research and Development Bureau</a></li>
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/UCO.html">University Council Office</a></li>
-                <li><a href="../../../bureau/dropdown1/B-L-agencies/O-EP-QA.html">Office of Education Planning and Quality Assurance</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/O-President.html">Office of the President</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/O-AServices.html">Office of Academic Services</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/O-ARP.html">Office of Academic Registration and Promotion</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/O-SD.html">Office of Student Development</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/R-DB.html">Research and Development Bureau</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/UCO.html">University Council Office</a></li>
+                <li><a href="../bureau/dropdown1/B-L-agencies/O-EP-QA.html">Office of Education Planning and Quality Assurance</a></li>
               </ul>
 
 
-              <li><a href="../../../bureau/dropdown1/I-agencies/I-agencies.html">institutional agencies</a>
+              <li><a href="../bureau/dropdown1/I-agencies/I-agencies.html">institutional agencies</a>
                 <ul class="submenu2">
-                    <li><a href="../../../bureau/dropdown1/I-agencies/ILI.html">International Language Institute</a></li>
+                    <li><a href="../bureau/dropdown1/I-agencies/ILI.html">International Language Institute</a></li>
                 </ul>    
             </li>
             </ul>
@@ -112,87 +220,85 @@
 
 
           <li>
-            <a href="../../../addmisson-to-education/addmisson-to-education.html">ADMISSION TO EDUCATION</a>
+            <a href="/addmisson-to-education/addmisson-to-education.html">ADMISSION TO EDUCATION</a>
             <ul class="submenu">
 
-              <li><a href="../../../addmisson-to-education/O-Admission-system.html">Online Admission System</a></li>
-              <li><a href="../../../addmisson-to-education/Fields-StudyOpen.html">Fields of study open</a></li>
-              <li><a href="../../../addmisson-to-education/Tuition-free.html">Tuition Fees</a></li>
-              <li><a href="../../../addmisson-to-education/scholarship.html">scholarship</a></li>
-              <li><a href="../../../addmisson-to-education/Proof-app-doc.html">Proof of application documents</a></li>
-              <li><a href="../../../addmisson-to-education/A-Calender.html">Academic Calendar 2020</a></li>
-            </ul>
-          </li>
-
-
-
-          <li>
-            <a href="../../crriculum/crriculum.html">CRRICULUM</a>
-            <ul class="submenu">
-
-              <li><a href="../../crriculum/dropdown/FIS-L/FISL.html">Faculty of Islamic Studies and Law (Bachelor's Degree)</a>
-                <ul class="submenu2">
-                    <li><a href="../../crriculum/dropdown/FIS-L/B-ASharia.html">Bachelor of Arts program in Sharia</a></li> 
-                    <li><a href="../../crriculum/dropdown/FIS-L/B-AUzuluddine.html">Bachelor of Arts program in Uzuluddine (International)</a></li>
-                    <li><a href="../../crriculum/dropdown/FIS-L/B-A-IS.html">Bachelor of Arts program in Islamic Studies</a></li>
-                    <li><a href="../../crriculum/dropdown/FIS-L/B-LJurisprudence.html">Bachelor of Laws in Jurisprudence</a></li>
-                    <li><a href="../../crriculum/dropdown/FIS-L/B-AQA.html">Bachelor of Arts program in Qur'an and Assunnah (International Program)</a></li>
-                </ul>
-            </li>
-
-
-              <li><a href="../../crriculum/dropdown/FA-SS/B-FASS.html">Faculty of Arts and Social Sciences (Bachelor's Degree)</a>
-                <ul class="submenu2">
-                    <li><a href="../../crriculum/dropdown/FA-SS/B-AArabic.html">Bachelor of Arts Program in Arabic (International)</a></li>
-                    <li><a href="../../crriculum/dropdown/FA-SS/B-PA.html">Bachelor of Public Administration Program in Public Administration</a></li>
-                    <li><a href="../../crriculum/dropdown/FA-SS/B-EFinancial.html">Bachelor of Economics program in Financial And Banking Economics</a></li>
-                    <li><a href="../../crriculum/dropdown/FA-SS/B-AEng.html">Bachelor of Arts Program in English (International Program) English</a></li>
-                    <li><a href="../../crriculum/dropdown/FA-SS/B-AMalay.html">Bachelor of Arts program in Malay (International Program)</a></li>
-                    <li><a href="../../crriculum/dropdown/FA-SS/B-BA.html">Bachelor of Business Administration Program in Business Administration</a></li>
-                </ul>
-            </li>
-
-
-              <li><a href="../../crriculum/dropdown/FST/B-Sc.html">Faculty of Science and Technology (Bachelor's Degree)</a>
-                <ul class="submenu2">
-                    <li><a href="../../crriculum/dropdown/FST/B-Sc-IT.html">Bachelor of Science Program in Information Technology (English Program)</a></li>
-                    <li><a href="../../crriculum/dropdown/FST/B-Sc-RD.html">Bachelor of Science Program in Halal Product Research and Development</a></li>
-                </ul>
-            </li>
-
-
-              <li><a href="../../crriculum/dropdown/FE/B-Edu.html">Faculty of Education (Bachelor's Degree)</a>
-                <ul class="submenu2">
-                    <li><a href="../../crriculum/dropdown/FE/B-IslamEdu.html">Bachelor of Education Program in Islamic Studies Teaching</a></li>
-                    <li><a href="../../crriculum/dropdown/FE/B-ArabicEdu.html">Bachelor of Education Program in Arabic Language Teaching</a></li>
-                    <li><a href="../../crriculum/dropdown/FE/B-GScEdu.html">Bachelor of Education Program in General Science Teaching</a></li>
-                    <li><a href="../../crriculum/dropdown/FE/B-ChemistryEdu.html">Bachelor of Education Program in Chemistry (Revised 2020, 4-year program)</a></li>
-                    <li><a href="../../crriculum/dropdown/FE/B-EngEdu.html">Bachelor of Education Program in English Language Teaching</a></li>
-                    <li><a href="../../crriculum/dropdown/FE/B-MalayEdu.html">Bachelor of Education Program in Malay Language Teaching</a></li>
-                </ul>
-            </li>
-
-              <li><a href="../../crriculum/dropdown/F-Nursing.html">Faculty of Nursing ( Established Project)</a></li>
+              <li><a href="O-Admission-system.html">Online Admission System</a></li>
+              <li><a href="Fields-StudyOpen.html">Fields of study open</a></li>
+              <li><a href="Tuition-free.html">Tuition Fees</a></li>
+              <li><a href="scholarship.html">scholarship</a></li>
+              <li><a href="Proof-app-doc.html">Proof of application documents</a></li>
+              <li><a href="A-Calender.html">Academic Calendar 2023</a></li>
             </ul>
           </li>
 
 
           <li>
-            <a href="../../../ftu-almuni.html">FTU ALMUNI</a>
+            <a href="../crriculum/crriculum.html">CRRICULUM</a>
+            <ul class="submenu">
+
+              <li><a href="../crriculum/dropdown/FIS-L/FISL.html">Faculty of Islamic Studies and Law (Bachelor's Degree)</a>
+                <ul class="submenu2">
+                    <li><a href="../crriculum/dropdown/FIS-L/B-ASharia.html">Bachelor of Arts program in Sharia</a></li> 
+                    <li><a href="../crriculum/dropdown/FIS-L/B-AUzuluddine.html">Bachelor of Arts program in Uzuluddine (International)</a></li>
+                    <li><a href="../crriculum/dropdown/FIS-L/B-A-IS.html">Bachelor of Arts program in Islamic Studies</a></li>
+                    <li><a href="../crriculum/dropdown/FIS-L/B-LJurisprudence.html">Bachelor of Laws in Jurisprudence</a></li>
+                    <li><a href="../crriculum/dropdown/FIS-L/B-AQA.html">Bachelor of Arts program in Qur'an and Assunnah (International Program)</a></li>
+                </ul>
+            </li>
+
+        <li><a href="../crriculum/dropdown/FA-SS/B-FASS.html">Faculty of Arts and Social Sciences (Bachelor's Degree)</a>
+            <ul class="submenu2">
+                <li><a href="../crriculum/dropdown/FA-SS/B-AArabic.html">Bachelor of Arts Program in Arabic (International)</a></li>
+                <li><a href="../crriculum/dropdown/FA-SS/B-PA.html">Bachelor of Public Administration Program in Public Administration</a></li>
+                <li><a href="../crriculum/dropdown/FA-SS/B-EFinancial.html">Bachelor of Economics program in Financial And Banking Economics</a></li>
+                <li><a href="../crriculum/dropdown/FA-SS/B-AEng.html">Bachelor of Arts Program in English (International Program) English</a></li>
+                <li><a href="../crriculum/dropdown/FA-SS/B-AMalay.html">Bachelor of Arts program in Malay (International Program)</a></li>
+                <li><a href="../crriculum/dropdown/FA-SS/B-BA.html">Bachelor of Business Administration Program in Business Administration</a></li>
+            </ul>
+        </li>
+
+
+          <li><a href="../crriculum/dropdown/FST/B-Sc.html">Faculty of Science and Technology (Bachelor's Degree)</a>
+            <ul class="submenu2">
+                <li><a href="../crriculum/dropdown/FST/B-Sc-IT.html">Bachelor of Science Program in Information Technology (English Program)</a></li>
+                <li><a href="../crriculum/dropdown/FST/B-Sc-RD.html">Bachelor of Science Program in Halal Product Research and Development</a></li>
+            </ul>
+        </li>
+
+
+          <li><a href="../crriculum/dropdown/FE/B-Edu.html">Faculty of Education (Bachelor's Degree)</a>
+            <ul class="submenu2">
+                <li><a href="../crriculum/dropdown/FE/B-IslamEdu.html">Bachelor of Education Program in Islamic Studies Teaching</a></li>
+                <li><a href="../crriculum/dropdown/FE/B-ArabicEdu.html">Bachelor of Education Program in Arabic Language Teaching</a></li>
+                <li><a href="../crriculum/dropdown/FE/B-GScEdu.html">Bachelor of Education Program in General Science Teaching</a></li>
+                <li><a href="../crriculum/dropdown/FE/B-ChemistryEdu.html">Bachelor of Education Program in Chemistry (Revised 2020, 4-year program)</a></li>
+                <li><a href="../crriculum/dropdown/FE/B-EngEdu.html">Bachelor of Education Program in English Language Teaching</a></li>
+                <li><a href="../crriculum/dropdown/FE/B-MalayEdu.html">Bachelor of Education Program in Malay Language Teaching</a></li>
+            </ul>
+        </li>
+
+          <li><a href="../crriculum/dropdown/F-Nursing.html">Faculty of Nursing ( Established Project)</a></li>
+        </ul>
+      </li>
+
+
+          <li>
+            <a href="../FTU-Alumni/FTU-Alumni.html">FTU ALMUNI</a>
           </li>
 
 
-          <li><a href="../../../ContactUs/contact-us.html">CONTACT US</a>
+          <li><a href="../ContactUs/contact-us.html">CONTACT US</a>
             <ul class="submenu">
-                <li><a href="../../../ContactUs/PDNews.html">Pikul delivered the news.</a></li>
-                <li><a href="../../../ContactUs/Assessments.html">Assessments</a></li>
-                <li><a href="../../../ContactUs/Forms.html">Forms for personnel</a></li>
-                <li><a href="../../../ContactUs/AF-P.html">Around the fence, Pikul</a></li>
-                <li><a href="../../../ContactUs/E-Books.html">E-Books</a></li>
-                <li><a href="../../../ContactUs/Contact-Map.html">Contact & Map</a></li>
-                <li><a href="../../../ContactUs/Building-Map.html">Building Map</a></li>
-                <li><a href="../../../ContactUs/SiteMap.html">Site Map Panel</a></li>
-                <li><a href="../../../ContactUs/SiteAdmins.html">Site Administrators</a></li>
+                <li><a href="../ContactUs/PDNews.html">Pikul delivered the news.</a></li>
+                <li><a href="../ContactUs/Assessments.html">Assessments</a></li>
+                <li><a href="../ContactUs/Forms.html">Forms for personnel</a></li>
+                <li><a href="../ContactUs/AF-P.html">Around the fence, Pikul</a></li>
+                <li><a href="../ContactUs/E-Books.html">E-Books</a></li>
+                <li><a href="../ContactUs/Contact-Map.html">Contact & Map</a></li>
+                <li><a href="../ContactUs/Building-Map.html">Building Map</a></li>
+                <li><a href="../ContactUs/SiteMap.html">Site Map Panel</a></li>
+                <li><a href="../ContactUs/SiteAdmins.html">Site Administrators</a></li>
             </ul>
         </li>
          <label for="check" class="checkbtn">
@@ -203,33 +309,102 @@
     </div>   
      <!--Navigation bar section end-->
 
-<section style="height: 100vh;"></section>
+<section class="AtA" style="height: 20vh;">
+    <a href="/addmisson-to-education/addmisson-to-education.html" class="headerAtA" >Admission to Education</a>
+    <h1 style="display: flex; font-size: 2rem; color: aliceblue; margin-top: 2%;">Field study open</h1>
+</section>
+<section style="height: 250vh; ; display: grid; grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); gap: 2% 6%; margin: 4% 0 0 0 ;">
+  <div class="Scard">
+    <a><h1 class="titleh">
+      School of Communication Arts
+    </h1></a>
+    <p>
+      The field of communication arts is concerned with the application of different types of media used to relay news, transfer knowledge, and provide entertainment. As effective management of these systems promotes development, increases knowledge and fosters mutual understanding, STOU recognized the necessity of providing programs in this field, and established the School of Communication Arts in 1984. Because it is a distance learning institution, STOU has significant interest and experience in using media to communicate effectively. Students are not only able to learn important theory in communication arts, but they are also provided with opportunities for hands-on learning through the university’s own facilities, like the Educational Broadcasting Production Center. Collaborations with professionals in the communication industry, such as award-winning directors and leading newspaper editors, also supplement students’ practical learning.
+    </p>
+    <button id="Arts" type="button" onclick="gotoFunction()" class="cmbtn" >
+      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+    </button>
+  </div>
+  <div class="Scard">
+    <a><h1 class="titleh">
+      School of Economics
+    </h1></a>
+    <p>
+      Economics is a field of social science that provides a theoretical and conceptual framework for analyzing the behavior of economic agents. The school’s programs provide methodological approaches and powerful tools for understanding the determinants and causal relationships in economic systems. The School of Economics was established on 12 March 1982. In addition to foundational macroeconomics, microeconomics and quantitative techniques in economic analysis, the School of Economics also offers a range of courses on various sub-disciplines, such as international economics, natural resources and environmental economics, managerial economics and economic development. The school aims to equip students with a sound understanding of the logic of the discipline as well as rigorous analytical skills crucial to logical decision-making processes at all levels.
+    </p>
+    <button id="Economics" type="button" onclick="gotoFunction()" class="cmbtn" >
+      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+    </button>
+  </div>
+  <div class="Scard">
+    <a><h1 class="titleh">
+      School of Educational Studies
+     </h1></a>
+    <p>
+      The School of Education Studies, established on 7 February 1979, offers programs which focus on developing in-service educational personnel who can strengthen their communities with increased academic knowledge and professional ethics. The school also aims to promote research development in the fields of teacher education and educational studies, provide academic services to educational personnel and other interested parties, and contribute to the preservation and maintenance of national arts and culture.
+    </p>
+    <button id="Educational" type="button" onclick="gotoFunction()" class="cmbtn" >
+      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+    </button>
+  </div>
+  <div class="Scard">
+    <a><h1 class="titleh">
+      School of Nursing
+    </h1></a>
+    <p>
+      STOU’s instruction in nursing arose from a desire to expand higher educational opportunities for nurses without forcing them to leave their jobs and families. Originally, the Bachelor of Nursing program was under the administration of the School of Health Science until 12 July 2000, when the School of Nursing was established. A master’s degree program, which started in 2005, integrates nursing science, management science and other related topics. Students in the School of Nursing acquire new expertise while working, giving them a chance to quickly apply what they have learned. Their productivity and effectiveness are greatly boosted, and their organizations also benefit from reduced personnel development costs and fewer staffing shortages.
+    </p>
+    <button id="Nursing" type="button" onclick="gotoFunction()" class="cmbtn" >
+      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+    </button>
+  </div>
+  <div class="Scard">
+    <a><h1 class="titleh">
+      School of Law
+    </h1></a>
+    <p>
+      The School of Law was established on 19 February 1980 to support and develop personnel in legal professions in both government and private sectors. The school also has seeks to provide continuing education in the field of law for those holding degrees and diplomas in other areas, as well as for other prospective learners. 
 
+      In 1993, the school set up the Center for Human Rights and Peace Education to disseminate knowledge in connection with human rights law and peace issues. In 2001, the Institute of International Economics and Business Law Studies was established to develop the legal knowledge of the school’s faculty members and STOU staff provide relevant information to students and the general public.
+    </p>
+    <button id="Law" type="button" onclick="gotoFunction()" class="cmbtn" >
+      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+    </button>
+  </div>
+  <div class="Scard">
+    <a><h1 class="titleh">
+      School of Science and Technology
+    </h1 class="titleh"></a>
+    <p>
+      STOU officially established the School of Science and Technology on 12 July 2000 after extensive preparations. The school provides opportunities for working professionals to develop their capabilities in the fields of printing technology and information technology. As students and graduates apply their knowledge and abilities in their respective careers, Thai society gains a greater understanding and appreciation of technology. STOU’s National Printing Technology Training Center is an important resource for STOU students in the Printing Technology 
+    </p>
+    <button  id="ST" type="button" onclick="gotoFunction()" class="cmbtn" >
+      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+    </button>
+  </div>
+</section>
 
-
-
-
-
-<!--Footer section-->
-    <footer class="footer_green">
-        <h1>Fatoni University</h1>
-            <div class="detail">
-                <p>Copyright 2023</p>
-                <p>Privacy policy</p>
-            </div>
-            <div class="info">
-                 <h2>ABOUT FTU</h2>
-                 <p>Fatoni University is the first private Islamic 
-                    higher education institytion in Thailand to be 
-                    established by Muslim scholars and Islamic studies luminaries in the region.</p><br>
-        <a href="https://www.google.com/">Read more</a> 
-        </div><!--I dont know what page I have to link to--></div>
-      <div class="footer_black">
-        <p>Designed by <span>Fatoni</span> University</p>
-        <img class="footer-img" src="../../../img/Ftu_logo.png">
-      </div>
-</footer>
-<!--Footer end-->
+                        
+  <!--Footer section-->
+  <footer class="footer_green">
+    <h1>Fatoni University</h1>
+    <div class="detail">
+      <p>Copyright 2023</p>
+      <p>Privacy policy</p>
+    </div>
+    <div class="info">
+      <h2>ABOUT FTU</h2>
+      <p>Fatoni University is the first private Islamic
+        higher education institytion in Thailand to be
+        established by Muslim scholars and Islamic studies luminaries in the region.</p><br>
+      <a href="https://www.google.com/">Read more</a>
+    </div><!--I dont know what page I have to link to--></div>
+    <div class="footer_black">
+      <p>Designed by <span>Fatoni</span> University</p>
+      <img class="footer-img" src="../img/Ftu_logo.png">
+    </div>
+  </footer>
+  <!--Footer end-->
 
 </body>
 

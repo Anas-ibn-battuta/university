@@ -9,19 +9,193 @@
     <meta name="description" content="FatoniUniversity website">
     <meta name="keywords" content="Information technology, university">
     <meta name="author" content="IT department">
-    <link rel="stylesheet" href="../../../../../../../../../style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Fatoni university</title>
+    <title>proof Application Documents</title>
+
+    <style>
+      html,body{
+        scroll-behavior: smooth;
+      }
+        .AtA {
+          padding: 4%;
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+      
+        .headerAtA {
+          position: relative;
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: 600;
+          text-decoration: none;
+          color: var(--main-color-1) ;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border-left: 3px solid var(--main-color-1);
+          padding: .13rem .75rem;
+        }
+      
+        .headerAtA::after {
+          content: "";
+          position: absolute;
+          color: black;
+          width: 0;
+          height: 15px;
+          border-radius: 10px;
+          background-color: var(--main-color-1);
+          bottom: 0%;
+          left: 9px;
+          z-index: -1;
+          opacity: 0.5;
+          transition: 0.5s;
+        }
+      
+        .headerAtA:hover {
+          color: rgb(23, 18, 14);
+          font-weight: 1000;
+          text-decoration: none;
+        }
+      
+        .headerAtA:hover:after {
+          width: 90%;
+          opacity: 0.4;
+        }
+        .imgs{
+          position: relative;
+          display: block;
+          margin: -7% 0 0 7%;
+          z-index: -3;
+        }
+        .card2{
+        position: absolute;
+        display: inline;
+        background-color: rgb(255, 254, 251);
+        width: 40vw;
+        height: 50vh;
+        z-index: 0;
+        border-radius:4px ;
+        left: 40%;
+        top:60%;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.5), 3px 3px 8px rgba(0,0,0,0.4);-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+       }
+  .card2 h1{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 40px -10px 0 40px;
+    text-align: left;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .card2 p{
+    position: relative;
+    text-align: left;
+    line-height: 200%;
+    font-size: 1rem;
+    margin: 40px 40px;
+  }
+  .card1{
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    background-color: rgb(223, 241, 225);
+    width: 40vw;
+    height: 50vh;
+    margin: -25% 5%;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5), 3px 3px 8px rgba(0,0,0,0.4);
+  }
+  .card1-h{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font: 3rem 'Times New Roman', Times, serif;
+    margin: 3% 0 0 5%;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 55%,rgba(255,219,109,0.6) 55%,rgba(255,219,109,0.6) 76%,rgba(255,255,255,0) 76%);
+  }
+  .cardsub{
+    position: relative;
+    font-size: 1.2rem;
+    padding: 9px;
+    margin: 3%;
+    top: -35%;
+    z-index: 2;
+  }
+  .cardsub ul li {
+    list-style-type: none;
+    padding: 10px;
+    color: #000;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .cardsub ul li a{
+    list-style-type: none;
+    padding: 10px;
+    color: var(--main-color-1);
+    font-weight: normal;
+    text-decoration: none;
+
+  }
+  .cardsub ul li a::after{
+    content: "";
+    position: absolute;
+    display: inline;
+    color: black;
+    width: 0;
+    height: 15px;
+    border-radius: 10px;
+    background-color: var(--main-color-1);
+    bottom: 54%;
+    left: 50px;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.9s;
+  }
+  .cardsub ul li a:hover {
+    color: rgb(34, 83, 33);
+    font-weight: 1000;
+    text-decoration: none;
+    text-decoration: underline;
+    transition: 0.9s;
+
+  }
+
+  .cardsub ul li a:hover:after {
+    width: 28%;
+    opacity: 0.4;
+  }
+  .grid-h3{margin: 5%; font-size: 1.3rem; line-height: 170%; color: rgb(5, 5, 68);}
+  .grid-h1{margin: 5%;width:60%; font: 2.3rem 'Times New Roman', Times, serif; color: rgb(1, 1, 71);}
+  .grid-ul{margin: 5%;}
+  .grid-ul li{padding: 3% 0; font-size: 1.2rem;color: rgb(5, 5, 68); line-height:180%;}
+  .btn{ background-image: linear-gradient( rgb(3, 3, 112),  rgb(1, 1, 71)50%); width: 60%; height: 7%; border-radius: 10px; text-align: left; padding:0;}
+  .btn a p{ color: aliceblue; display: inline-block;
+    font: 1.2em 'Times New Roman', Times, serif;width: 180px;margin:5% 4%;text-decoration: none;
+  }
+  .btn i{
+    display: flex;
+    text-align: right;
+    font-size: 2rem;
+    margin: -20% 0 0 180%;
+    transition: 0.4s margin-left;
+  }
+  .btn:hover{filter: opacity(0.8); border: 3px solid rgb(168, 204, 215); color: aliceblue;}
+  .btn i:hover{margin-left: 185%;}
+
+        </style>
 </head>
 <body>
     <!--Header section start [FTU logo on left + Social media links on right writing by yaser abulkhair]-->
     <header class="header-section">
         <!--for ftu logo-->
-        <a href=""><img class="ftulogo" src="../../../img/head-ftu.png" alt="" /></a>
+        <a href="../index.html"><img class="ftulogo" src="../../../img/head-ftu.png" alt="" /></a>
         <!--for social logo-->
         <section class="social-logo">
             <a href="https://www.facebook.com/FatoniUniversity/"><img class="SL-img" src="../../../img/facebooklogo.png"
@@ -120,7 +294,7 @@
               <li><a href="../../../addmisson-to-education/Tuition-free.html">Tuition Fees</a></li>
               <li><a href="../../../addmisson-to-education/scholarship.html">scholarship</a></li>
               <li><a href="../../../addmisson-to-education/Proof-app-doc.html">Proof of application documents</a></li>
-              <li><a href="../../../addmisson-to-education/A-Calender.html">Academic Calendar 2020</a></li>
+              <li><a href="../../../addmisson-to-education/A-Calender.html">Academic Calendar 2023</a></li>
             </ul>
           </li>
 
@@ -178,7 +352,7 @@
 
 
           <li>
-            <a href="../../../ftu-almuni.html">FTU ALMUNI</a>
+            <a href="../../../FTU-Alumni/FTU-Alumni.html">FTU ALMUNI</a>
           </li>
 
 
@@ -203,7 +377,85 @@
     </div>   
      <!--Navigation bar section end-->
 
-<section style="height: 100vh;"></section>
+<section class="AtA" style="height: 40vh;">
+ <a href="/addmisson-to-education/addmisson-to-education.html" class="headerAtA">Admission to Education</a>
+ <h1 style="display: flex; font-size: 2rem; color: rgb(0, 0, 0); margin-top: 2%; text-shadow: 0 1px 1px #000;">Application Documents</h1>
+</section>
+<section style="height: 100vh;">
+  <img src="../img/stdfst.jpg" class="imgs" alt="FST Students">
+  <div class="card2">
+    <h1>Take the next step in your academic journey.</h1>
+    <p>We seek promising students who will contribute to the Harvard community during their college years, and to society throughout their lives.<br>
+    While academic accomplishment is important, the Admissions Committee considers many other factors—strong personal qualities, <br>&emsp;&emsp;&emsp;&emsp;special talents or excellences of all kinds, perspectives<br>&emsp;&emsp;&emsp;&emsp;formed by unusual personal circumstances, and the ability<br>&emsp;&emsp;&emsp;&emsp;to takeadvantage of available resources and opportunities.</p>
+  </div><div class="card2" style="background-color:rgb(222, 221, 221); left: 41%; top: 62%; z-index: -1;"></div>
+  <div class="card1">
+    <h1 class="card1-h" style="height:16%; color: rgb(2, 2, 59); ">First-Year Applicants</h1>
+    <hr style=" width:100%;  margin-top: 6%; ">
+    </div>
+    <div class="cardsub">
+      <ul>
+        <li>On this page</li>
+        <li ><a href="#Why" class="li-card">First-Year Application Requirements</a></li>
+        <li ><a href="#How" class="li-card">Application Timeline</a></li>
+        <li ><a href="#" class="li-card">Mailing Your Application</a></li>
+      </ul>
+  </div><div class="card2" style="background-color: rgb(203, 219, 203); top: 95%; left: 6%; z-index: 0;"></div>
+</section>
+
+
+<section id="Why" style="height: 130vh;display: grid;grid-template-columns:5% 47% 47%;   margin: 5%;">
+<div id="Why" style="height: 100%; width: 100%;border: 1px solid rgba(0, 0, 0, 0.8); ">
+</div>
+<div style="border-top:1px solid rgba(0, 0, 0, 0.8);;border-bottom:1px solid rgba(0, 0, 0, 0.8); " >
+  <h1 class="grid-h1">First-Year Applicants Requirements</h1>
+</div>
+<div style="height: 100%; width: 100%;border: 1px solid rgba(0, 0, 0, 0.8);border-left: 0;">
+  <h3 class="grid-h3">All first-year applicants—both international and U.S. candidates—must complete the <u>Common Application</u> or <u>apply Coalition, Powered by Scoir</u>, along with the required supplements. You will need to submit:</h3>
+
+  <ul class="grid-ul">
+    <li>Common Application or apply Coalition, Powered by Scoir
+    </li>
+    <li>Harvard College Questions for the Common Application or Coalition Application Harvard supplement
+    </li>
+    <li>$85 fee (or <u>request a fee waiver</u>)
+    </li>
+    <li>SAT or ACT (with or without writing) - <u>test-optional for 2022-2026 application cycles</u>
+      <ul>
+      <li>AP or other examination results are not required, but may be submitted
+      </li>
+    </ul>
+    </li>
+    <li>School Report (which includes a counselor letter) and high school transcript</li>
+    <li>Midyear School Report (after your first semester grades)
+    </li>
+    <li>Final School Report (for admitted students only)
+    </li>
+  </ul>
+    <div class="btn">
+    <a href="scholarship.html">
+      </i><p>View detailed application requirements<i class="uil uil-arrow-right"></i></p></i></a>
+  </div>
+</div>
+</section>
+
+<section id="How" style="height: 130vh;display: grid;grid-template-columns:5% 47% 47%;   margin:-5% 5%; margin-bottom: 5%;">
+  <div id="Why" style="height: 100%; width: 100%;border: 1px solid rgba(0, 0, 0, 0.8); ">
+  </div>
+  <div style="border-top:1px solid rgba(0, 0, 0, 0.8);;border-bottom:1px solid rgba(0, 0, 0, 0.8); " >
+    <h1 class="grid-h1">Application Timeline</h1>
+  </div>
+  <div style="height: 100%; width: 100%;border: 1px solid rgba(0, 0, 0, 0.8);border-left: 0;">
+    <h3 class="grid-h3">All You may apply to Harvard under either our Restrictive Early Action or our Regular Decision program, both of which allow you to compare admission and financial aid offers from other institutions and to wait until May 1 to make a final college choice.</h3>
+  
+    <ul class="grid-ul">
+      <li>Restrictive Early Action candidates apply by <b>November 1</b> and receive notification by <b>mid-December</b>. 
+      </li>
+      <li>Regular Decision candidates apply by <b>January 1</b> and receive notification by the <b>end of March</b>.
+      </li>
+    </ul>
+    <h3 class="grid-h3">You are welcome to apply to Harvard using the Common Application or the Coalition Application, Powered by Scoir. The Common Application opens on August 1 for applicants to start completing their application. The Coalition Application is being developed in partnership with Scoir/Technolutions for the 2022-23 application cycle and opens on September 1.</h3>
+  </div>
+  </section>
 
 
 
@@ -226,7 +478,7 @@
         </div><!--I dont know what page I have to link to--></div>
       <div class="footer_black">
         <p>Designed by <span>Fatoni</span> University</p>
-        <img class="footer-img" src="../../../img/Ftu_logo.png">
+        <img class="footer-img" src="../img/Ftu_logo.png">
       </div>
 </footer>
 <!--Footer end-->
