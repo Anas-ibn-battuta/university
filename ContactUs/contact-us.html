@@ -16,6 +16,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fatoni university</title>
+    <style>
+      *, *::after, *:after{
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+      }
+      section h1{
+        background-color: ;
+        color: var(--main-color-1);
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+      }
+      .map-box{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: white;
+      }
+      .map-box iframe{
+        width: 80%;
+        height: 500px;
+        filter: invert(100%);
+      }
+      .map-box h1{
+        color: var(--main-color-1);
+        margin-bottom: 50px;
+      }
+
+      /*for the form */
+      main{
+        margin: 1rem auto;
+        width: 90%;
+        max-width: 1000px;
+      }
+      input, label, button{
+        padding: 0.2rem 1rem;
+        font-size: 1.2rem ;
+        color: inherit;
+        
+        
+      }
+      button{
+        text-align: right;
+      }
+
+      .form-box{
+        padding: 0.5rem 0 ;
+        display: flex;
+        flex-direction: column;
+        background-color: bisque;
+      }
+      .form-box label{
+        display: none;
+      }
+      .form-box input,
+      .formbox textarea{
+        flex-basis: 100%;
+      }
+      
+      /*media for decktop */
+      @media only screen and (min-width: 600px){
+       
+
+
+        
+        .form-box{
+          flex-direction: row;
+        }
+        .form-box label{        
+        display: block;
+        flex: 0 0 9rem;
+        }
+        .form-box input,
+        .form-box textarea{
+          flex: 1 1 0;
+
+        }
+        .form-box button{
+          background-color: black;
+          margin-left: 11rem;
+
+        }
+        
+        section h1{
+        background-color: ;
+        color: var(--main-color-1);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+      }
+        
+        
+      }
+    </style>
 </head>
 <body>
     <!--Header section start [FTU logo on left + Social media links on right writing by yaser abulkhair]-->
@@ -46,9 +148,7 @@
             <li><a href="../about-ftu/dropdown-about-ftu/Vision.html">Vision, Philosophy, Aspirations and Strategic Issues</a></li>
             <li><a href="../about-ftu/dropdown-about-ftu/Identity.html">Identity Identity and promotion measures</a></li>
             <li><a href="../about-ftu/dropdown-about-ftu/Admin-structure.html">Administrative structure</a></li>
-            <li><a href="../about-ftu/dropdown-about-ftu/Uni-EH.html">University Executive House</a></li>
-            <li><a href="../about-ftu/dropdown-about-ftu/Annual-Report.html">Annual Report</a></li>
-            <li><a href="../about-ftu/dropdown-about-ftu/Annual-holidays.html">Annual holidays</a></li>
+              
           </ul>
           </li>
 
@@ -182,7 +282,7 @@
           </li>
 
 
-          <li><a href="/ContactUs/contact-us.html">CONTACT US</a>
+          <li><a href="./contact-us.html">CONTACT US</a>
             <ul class="submenu">
                 <li><a href="PDNews.html">Pikul delivered the news.</a></li>
                 <li><a href="Assessments.html">Assessments</a></li>
@@ -203,7 +303,85 @@
     </div>   
      <!--Navigation bar section end-->
 
-<section style="height: 100vh;"></section>
+<section style="height: 10vh;"></section>
+<section>
+  <h1>Contact us</h1>
+</section>
+
+<!--form section-->
+    <section>
+      
+      <main>
+        <form class="my-form">
+          <div class="form-box">
+            <label for="Name">Name:</label>
+            
+            <input type="text" id="Name" name="Name" required pattern="[a-zA-Z]{2,}.[a-zA-Z]{2,}" title="First and last name" placeholder="First and Last name" >
+          </div>
+          <div class="form-box">
+            <label for="Phone Number">Phone:</label>
+            <input type="text" id="Phone" name="Number" maxlength="10" required placeholder="Phone Number">
+          </div>
+          <div class="form-box">
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="Email"required  pattern="[a-z0-9._%+-]+@(gmail||yahoo)[a-z0-9.-]+\.[a-z]{2,}$" title="only gmail or yahoo or icloud" placeholder="Email Address">
+          </div>
+          <div class="form-box">
+            <label for="Message">Message</label>
+            <input type="text" id="Message" name="Message" style="width:px; height: px;" placeholder="Message">
+          </div>
+          
+          <div class="form-box">
+              <button id="btnSend">Send</button>
+            </div>
+          </form>
+          
+        </main>
+          
+      </section>
+        
+          
+        
+        
+          
+
+
+
+ <!--Location start-->
+ <div class="map-box">
+   <h1>University location</h1>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3872715242696!2d101.3413320144588!3d6.5986989241160385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b3752fbe66afa3%3A0x4544604609b0485f!2sFatoni%20University!5e0!3m2!1sen!2sth!4v1673813598853!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!--location end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,11 +401,14 @@
                     higher education institytion in Thailand to be 
                     established by Muslim scholars and Islamic studies luminaries in the region.</p><br>
         <a href="https://www.google.com/">Read more</a> 
-        </div><!--I dont know what page I have to link to--></div>
-      <div class="footer_black">
-        <p>Designed by <span>Fatoni</span> University</p>
+        </div>
+        <!--I dont know what page I have to link to-->
+     
+        <!--
+        <div class="footer_black">
+          <p>Designed by <span>Fatoni</span> University</p>
         <img class="footer-img" src="../img/Ftu_logo.png">
-      </div>
+      </div>-->
 </footer>
 <!--Footer end-->
 

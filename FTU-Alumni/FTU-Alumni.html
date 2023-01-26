@@ -2,36 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="imsubject/x-icon" href="../img/FTU-LOGO.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FatoniUniversity website">
-    <meta name="keywords" content="Information technology, university">
-    <meta name="author" content="IT department">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Fatoni university</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="imsubject/x-icon" href="../img/FTU-LOGO.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FatoniUniversity website">
+  <meta name="keywords" content="Information technology, university">
+  <meta name="author" content="IT department">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Fatoni university</title>
+
+  <style>
+    .FTU-Alumni {
+      background-color: linen;
+      /* change later */
+      display: flex;
+      flex-direction: column;
+      margin: 10px 10%;
+      border-radius: 4px;
+    }
+
+    .h1aln {
+      margin: 10px auto;
+
+    }
+
+    .hrfsprct {
+      margin: 10px 2%;
+    }
+
+    .h2aln {
+      margin: 5px 10% 10px;
+
+    }
+
+    .imgaln {
+      width: 25%;
+      margin: auto;
+    }
+
+    .paln {
+      color: black;
+      padding: 0px 5%;
+      margin: 10px 0px 0px;
+    }
+
+    .imgalnflexfr {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .imgalnflexcl {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: 1000px) {
+      .imgalnflexfr {
+        flex-direction: column;
+      }
+
+      .imgaln {
+        width: 75%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
-    <!--Header section start [FTU logo on left + Social media links on right writing by yaser abulkhair]-->
-    <header class="header-section">
-        <!--for ftu logo-->
-        <a href=""><img class="ftulogo" src="../img/head-ftu.png" alt="" /></a>
-        <!--for social logo-->
-        <section class="social-logo">
-            <a href="https://www.facebook.com/FatoniUniversity/"><img class="SL-img" src="../img/facebooklogo.png"
-                    alt="" /></a>
-            <a href="https://www.youtube.com/user/SuaraHaramain/videos/"><img class="SL-img" src="../img/youtubelogo.png"
-                    alt="" /></a>
-            <a href="https://www.facebook.com/FTUtv/"><img class="SL-img" src="../img/liveloge.png" alt="" /></a>
-        </section>
-    </header>
-    <!--Navigation bar section start [Home + About FTU + Admission + Course + Department + Visit FTU + Contact] with hover function if possible-->
+  <!--Header section start [FTU logo on left + Social media links on right writing by yaser abulkhair]-->
+  <header class="header-section">
+    <!--for ftu logo-->
+    <a href=""><img class="ftulogo" src="../img/head-ftu.png" alt="" /></a>
+    <!--for social logo-->
+    <section class="social-logo">
+      <a href="https://www.facebook.com/FatoniUniversity/"><img class="SL-img" src="../img/facebooklogo.png"
+          alt="" /></a>
+      <a href="https://www.youtube.com/user/SuaraHaramain/videos/"><img class="SL-img" src="../img/youtubelogo.png"
+          alt="" /></a>
+      <a href="https://www.facebook.com/FTUtv/"><img class="SL-img" src="../img/liveloge.png" alt="" /></a>
+    </section>
+  </header>
+  <!--Navigation bar section start [Home + About FTU + Admission + Course + Department + Visit FTU + Contact] with hover function if possible-->
 
     <div class="dropdown">
         <nav>
@@ -50,7 +111,7 @@
             <li><a href="../about-ftu/dropdown-about-ftu/Annual-Report.html">Annual Report</a></li>
             <li><a href="../about-ftu/dropdown-about-ftu/Annual-holidays.html">Annual holidays</a></li>
           </ul>
-          </li>
+        </li>
 
           <li>
             <a href="../bureau/bureau.html">BUREAU</a>
@@ -105,9 +166,9 @@
                     <li><a href="../bureau/dropdown1/I-agencies/ILI.html">International Language Institute</a></li>
                 </ul>    
             </li>
-            </ul>
-            </li>
-          </li>
+          </ul>
+        </li>
+        </li>
 
 
 
@@ -177,9 +238,9 @@
           </li>
 
 
-          <li>
-            <a href="FTU-Alumni.html">FTU ALMUNI</a>
-          </li>
+        <li>
+          <a href="FTU-Alumni.html">FTU-Alumni</a>
+        </li>
 
           
           <li><a href="../ContactUs/contact-us.html">CONTACT US</a>
@@ -204,33 +265,80 @@
     </div>   
      <!--Navigation bar section end-->
 
-<section style="height: 100vh;"></section>
+  <!-- Content section -->
+  <section class="FTU-Alumni">
+    <h1 class="h1aln">
+      Fatoni University Alumni Association
+    </h1>
+
+    <hr class="hrfsprct">
+    <h2 class="h2aln">
+      Alumni gathering activities
+    </h2>
+    <section class="imgalnflexfr">
+      <img src="image_for_aml/FTU-Alumni2.jpg" alt="Alumni activity image 2" class="imgaln">
+      <img src="image_for_aml/FTU-Alumni3.jpg" alt="Alumni activity image 3" class="imgaln">
+      <img src="image_for_aml/FTU-Alumni4.jpg" alt="Alumni activity image 4" class="imgaln">
+    </section>
+    <p class="paln">
+      A collection of pictures of Iftaraya Mayi activities Fatoni University alumni Pattani Province, April 19, 2022 at
+      Papataku Pattani
+    </p>
+    <hr class="hrfsprct">
+
+    <h2 class="h2aln">
+      Alumni gathering activities
+    </h2>
+    <section class="imgalnflexcl">
+      <img src="image_for_aml/FTU-Alumni1.jpg" alt="Alumni activity image" class="imgaln">
+    </section>
+    <p class="paln">
+      Invite alumni of Fatoni University, Pattani Province, to join the Iftaraya Mayi Fasting on Tuesday, April 19, 2022
+      at
+      PAPA TAGU Pattani restaurant from 5:00 p.m. onwards. Registration fee 100 baht per person, account name, Kattafi
+      Duere
+      University, 9070663546, send slip via Line 0887991286, you can sign the form in the link below.
+    </p>
+    <hr class="hrfsprct">
+
+    <h2 class="h2aln">
+      Jaya 5 sharing kindness in the fight against COVID-19
+    </h2>
+    <section class="imgalnflexfr">
+      <img src="image_for_aml/FTU-Alumni5.jpg" alt="Alumni activity image 2" class="imgaln">
+      <img src="image_for_aml/FTU-Alumni6.jpg" alt="Alumni activity image 3" class="imgaln">
+      <img src="image_for_aml/FTU-Alumni7.jpg" alt="Alumni activity image 4" class="imgaln">
+    </section>
+    <p class="paln">
+      Invite alumni of Fatoni University, Pattani Province to attend a lecture on the topic "Jaya 5 sharing kindness in
+      the
+      fight against COVID-19" in a Facebook live on October 5, 2021 at 8:20 PM onwards. .
+    </p>
+    <hr class="hrfsprct">
+  </section>
+  <!-- Content section end -->
 
 
-
-
-
-
-<!--Footer section-->
-    <footer class="footer_green">
-        <h1>Fatoni University</h1>
-            <div class="detail">
-                <p>Copyright 2023</p>
-                <p>Privacy policy</p>
-            </div>
-            <div class="info">
-                 <h2>ABOUT FTU</h2>
-                 <p>Fatoni University is the first private Islamic 
-                    higher education institytion in Thailand to be 
-                    established by Muslim scholars and Islamic studies luminaries in the region.</p><br>
-        <a href="https://www.google.com/">Read more</a> 
-        </div><!--I dont know what page I have to link to--></div>
-      <div class="footer_black">
-        <p>Designed by <span>Fatoni</span> University</p>
-        <img class="footer-img" src="../img/Ftu_logo.png">
-      </div>
-</footer>
-<!--Footer end-->
+  <!--Footer section-->
+  <footer class="footer_green">
+    <h1>Fatoni University</h1>
+    <section class="detail">
+      <p>Copyright 2023</p>
+      <p>Privacy policy</p>
+    </section>
+    <section class="info">
+      <h2>ABOUT FTU</h2>
+      <p>Fatoni University is the first private Islamic
+        higher education institytion in Thailand to be
+        established by Muslim scholars and Islamic studies luminaries in the region.</p><br>
+      <a href="https://www.google.com/">Read more</a>
+    </section><!--I dont know what page I have to link to--></section>
+    <section class="footer_black">
+      <p>Designed by <span>Fatoni</span> University</p>
+      <img class="footer-img" src="..../img/Ftu_logo.png">
+    </section>
+  </footer>
+  <!--Footer end-->
 
 </body>
 
