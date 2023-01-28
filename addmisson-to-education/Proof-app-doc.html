@@ -70,24 +70,26 @@
         }
         .imgs{
           position: relative;
-          display: block;
-          margin: -7% 0 0 7%;
+          display: inline-block ;
+          margin: -7% 0 0 -8%;
           z-index: -3;
+          filter: brightness(55%);
         }
         .card2{
         position: absolute;
         display: inline;
         background-color: rgb(255, 254, 251);
         width: 40vw;
-        height: 50vh;
+        height: fit-content;
         z-index: 0;
         border-radius:4px ;
         left: 40%;
         top:60%;
-        box-shadow: 3px 3px 10px rgba(0,0,0,0.5), 3px 3px 8px rgba(0,0,0,0.4);-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+        box-shadow: 1px 1px 8px rgba(47, 47, 47, 0.8), 8px 8px 1px rgb(166, 166, 166), 15px 15px 1px rgba(103, 103, 103, 0.6);
        }
   .card2 h1{
     position: relative;
+    display: inline-block;
     font-size: 1.6rem;
     margin: 40px -10px 0 40px;
     text-align: left;
@@ -96,21 +98,23 @@
   }
   .card2 p{
     position: relative;
+    display: inline-block;
     text-align: left;
     line-height: 200%;
     font-size: 1rem;
     margin: 40px 40px;
   }
   .card1{
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    display: block;
     z-index: 2;
     background-color: rgb(223, 241, 225);
     width: 40vw;
     height: 50vh;
-    margin: -25% 5%;
+    margin: -30% 0 0 5%;
     border-radius: 3px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.5), 3px 3px 8px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 8px rgba(47, 47, 47, 0.5), 8px 8px 1px rgba(142, 176, 162, 0.5), 5px 5px 1px rgba(36, 132, 65, 0.4);
+
   }
   .card1-h{
     position: relative;
@@ -171,23 +175,23 @@
     width: 28%;
     opacity: 0.4;
   }
-  .grid-h3{margin: 5%; font-size: 1.3rem; line-height: 170%; color: rgb(5, 5, 68);}
-  .grid-h1{margin: 5%;width:60%; font: 2.3rem 'Times New Roman', Times, serif; color: rgb(1, 1, 71);}
-  .grid-ul{margin: 5%;}
-  .grid-ul li{padding: 3% 0; font-size: 1.2rem;color: rgb(5, 5, 68); line-height:180%;}
-  .btn{ background-image: linear-gradient( rgb(3, 3, 112),  rgb(1, 1, 71)50%); width: 60%; height: 7%; border-radius: 10px; text-align: left; padding:0;}
+  .grid-h3{margin: 5%; font-size: 1.2rem; line-height: 170%; color: rgb(40, 97, 45);}
+  .grid-h1{margin: 5%;width:60%; font: 2.3rem 'Times New Roman', Times, serif; color: rgb(1, 1, 71);} 
+  .grid-ul{margin: 5% 5% 0 5% ;}
+  .grid-ul li{padding: 3% 0; font-size: 1rem;color: rgb(51, 119, 73); line-height:180%;}
+  .btn{ position:relative; display: inline-block;  margin:5% 9%; background-image: linear-gradient( rgb(3, 3, 112),  rgb(1, 1, 71)50%); width: 60%; height: 7%; border-radius: 10px; text-align: left; padding:0;}
   .btn a p{ color: aliceblue; display: inline-block;
     font: 1.2em 'Times New Roman', Times, serif;width: 180px;margin:5% 4%;text-decoration: none;
   }
   .btn i{
-    display: flex;
-    text-align: right;
+    display: block;
+    text-align: center;
     font-size: 2rem;
-    margin: -20% 0 0 180%;
+    margin: -20% 0 0 150%;
     transition: 0.4s margin-left;
   }
   .btn:hover{filter: opacity(0.8); border: 3px solid rgb(168, 204, 215); color: aliceblue;}
-  .btn i:hover{margin-left: 185%;     margin-top: -19%;
+  .btn i:hover{margin-left: 153%;     margin-top: -30%;
 }
 
         </style>
@@ -385,8 +389,8 @@
   <div class="card2">
     <h1>Take the next step in your academic journey.</h1>
     <p>We seek promising students who will contribute to the Harvard community during their college years, and to society throughout their lives.<br>
-    While academic accomplishment is important, the Admissions Committee considers many other factors—strong personal qualities, <br>&emsp;&emsp;&emsp;&emsp;special talents or excellences of all kinds, perspectives<br>&emsp;&emsp;&emsp;&emsp;formed by unusual personal circumstances, and the ability<br>&emsp;&emsp;&emsp;&emsp;to takeadvantage of available resources and opportunities.</p>
-  </div><div class="card2" style="background-color:rgb(222, 221, 221); left: 41%; top: 62%; z-index: -1;"></div>
+    While academic accomplishment is important, the Admissions Committee considers many other <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;factors—strong personal qualities,special talents or<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;excellences of all kinds, perspectives formed by <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;unusual personal circumstances, and the ability to <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;takeadvantage of available resources and <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;opportunities.</p>
+  </div>
   <div class="card1">
     <h1 class="card1-h" style="height:16%; color: rgb(2, 2, 59); ">First-Year Applicants</h1>
     <hr style=" width:100%;  margin-top: 6%; ">
@@ -398,11 +402,11 @@
         <li ><a href="#How" class="li-card">Application Timeline</a></li>
         <li ><a href="../img/application-doc.pdf" download class="li-card">Mailing Your Application</a></li>
       </ul>
-  </div><div class="card2" style="background-color: rgb(203, 219, 203); top: 95%; left: 6%; z-index: 0;"></div>
+  </div>
 </section>
 
 
-<section id="Why" style="height: 130vh;display: grid;grid-template-columns:5% 47% 47%;   margin: 5%;">
+<section id="Why" style="height: fit-content;display: grid;grid-template-columns:5% 47% 47%;   margin: 5%;">
 <div id="Why" style="height: 100%; width: 100%;border: 1px solid rgba(0, 0, 0, 0.8); ">
 </div>
 <div style="border-top:1px solid rgba(0, 0, 0, 0.8);;border-bottom:1px solid rgba(0, 0, 0, 0.8); " >
@@ -437,7 +441,7 @@
 </div>
 </section>
 
-<section id="How" style="height: 130vh;display: grid;grid-template-columns:5% 47% 47%;   margin:-5% 5%; margin-bottom: 5%;">
+<section id="How" style="height: fit-content;display: grid;grid-template-columns:5% 47% 47%;   margin:-5% 5%; margin-bottom: 5%;">
   <div id="Why" style="height: 100%; width: 100%;border: 1px solid rgba(0, 0, 0, 0.8); ">
   </div>
   <div style="border-top:1px solid rgba(0, 0, 0, 0.8);;border-bottom:1px solid rgba(0, 0, 0, 0.8); " >
@@ -455,7 +459,7 @@
     <h3 class="grid-h3">You are welcome to apply to Harvard using the Common Application or the Coalition Application, Powered by Scoir. The Common Application opens on August 1 for applicants to start completing their application. The Coalition Application is being developed in partnership with Scoir/Technolutions for the 2022-23 application cycle and opens on September 1.</h3>
     <div class="btn">
       <a href="../img/application-doc.pdf" download>
-        <p>Application Doc download<i class="uil uil-cloud-download" style="margin: -8% 0 0 180%;"></i></p></a>
+        <p>Application Doc download<i class="uil uil-cloud-download"style="margin-top:-10%; "></i></p></a>
     </div>
   </div>
   </section>

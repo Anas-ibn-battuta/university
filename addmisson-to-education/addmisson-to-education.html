@@ -25,7 +25,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(150, 201, 143, 0.6)),
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
   }
 
   .AtA {
@@ -79,7 +79,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(150, 201, 143, 0.6)),
     position: relative;
     height: 60vh;
     width: auto;
-    padding: 2%;
+    padding: 1%;
     left: 3%;
     top: 7%;
   }
@@ -87,8 +87,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(150, 201, 143, 0.6)),
   .ullist {
     display: inline-block;
     position: relative;
-    left: 50%;
-    top: -60%;
+    margin: -50% 0 0 50%;
     text-decoration: none;
     font-size: 1.4rem;
   }
@@ -108,23 +107,24 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(150, 201, 143, 0.6)),
     text-decoration: none;
   }
 
-  mark {
+ .Para span{
     text-transform: uppercase;
-    position: absolute;
+    position: relative;
     color: azure;
     width: 13%;
+    margin-right: 30px;
     height: 30px;
     border-radius: 15px;
-    background-color:rgba(201, 201, 22, 0.508);
+    background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 46%,rgba(255,219,109,0.6) 46%,rgba(255,219,109,0.6) 75%,rgba(255,255,255,0) 75%);
   }
   video{
     position: relative;
-    display: inline-block;
+    display: block;
     width: 60vh;
     height: auto;
-    top: -54%;
+    top: -60%;
     left: 60%;
-    border-radius: 30px;
+    border-radius: 20px;
   }
 </style>
 
@@ -344,10 +344,10 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(150, 201, 143, 0.6)),
     <h1 style="display: flex; font-size: 2rem; color: whitesmoke; margin-top: 2%;">Admission to Education</h1>
   </section>
   <hr style="width:60%;text-align: center ;margin: 2%; margin-left: 20%; margin-top: -1%;">
-    <section style="position: relative; align-items: flex-start; height: 60vh;">
+    <section class="Para" style="position: relative; align-items: flex-start; height: 60vh;">
     <P
-      style=" padding:7%; font-size: 3rem; letter-spacing:0 4px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(127, 255, 187);">
-      Through transformative adult<br><br><br>learning, we  <mark>elevate</mark>&emsp;&emsp;&emsp;&emsp; student
+    style=" padding:7%; font-size: 3rem; letter-spacing:0 4px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(127, 255, 187);">
+      Through transformative adult<br><br><br>learning, we  <span>elevate</span>student
       <br><br><br>learning.
     </P>
     <video controls autoplay>
@@ -357,10 +357,10 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(150, 201, 143, 0.6)),
     </video>
   </section>
   <section
-    style="height: 70vh ; background-color:rgb(201, 226, 211); border-radius: 40px; box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.9); opacity: 0.8; margin-bottom: 4%;">
+    style="height: 70vh ; background-color:rgb(201, 226, 211); border-radius: 20px; box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.9); opacity: 0.8; margin: 4% 9%;">
     <img class="hh" src="../img/hh.png" alt="" />
     <h2
-      style="position: relative; left:51%; top:-62%; font-size: 2rem; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(138, 30, 30); opacity: 1;">
+      style="position: relative; display: inline; top:-60%; left: 20%; font-size: 2rem; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(138, 30, 30); opacity: 1;">
       Admission to Education
     </h2>
     <ul class="ullist">

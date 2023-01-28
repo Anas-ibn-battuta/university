@@ -110,18 +110,10 @@
         text-align: center;
         font: 4rem 'Times New Roman', Times, serif;
         margin: 3% 5%;
-        background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 66%,rgba(255,219,109,0.6) 66%,rgba(255,219,109,0.6) 85%,rgba(255,255,255,0) 85%);
+        background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 45%,rgba(255,219,109,0.6) 45%,rgba(255,219,109,0.6) 85%,rgba(255,255,255,0) 85%);
+
       }
-      mark{
-        position: absolute;
-        width: 0;
-        max-height: 0;
-        background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 66%,rgba(255,219,109,0.6) 66%,rgba(255,219,109,0.6) 85%,rgba(255,255,255,0) 85%);
-        transition: all 0.4s cubic-bezier(0.5,0,0.5,1);
-        transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-        transition-delay: 0s;
-        transition-property: all;
-      }
+
       .cardsub{
         position: relative;
         left: 16%;
@@ -135,7 +127,7 @@
         padding: 10px;
         color: #000;
         font-weight: 900;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
       }
       .cardsub ul li a{
         list-style-type: none;
@@ -167,7 +159,7 @@
       }
     
       .cardsub ul li a:hover:after {
-        width: 17%;
+        width: 20%;
         opacity: 0.4;
       }
       .card2{
@@ -191,16 +183,17 @@
       }
       .card2 p{
         position: relative;
+        display: inline-block;
         text-align: center;
         font-size: 1rem;
-        margin: 40px 40px;
+        margin: 10px 40px 0px 40px;
       }
       .applybtn{
         position: relative;
+        display: inline-block;
         width: 60%;
         height: 10%;
-        left: 17%;
-        top: 10%;
+        margin: 3% 20%;
         background-image:
         linear-gradient(180deg, 
         rgb(196, 10, 10) ,
@@ -210,28 +203,33 @@
         font: 1rem 'Prompt', sans-serif;
       }
       .applybtn:hover{
-        filter: drop-shadow(4px 5px 2px rgb(129, 128, 128));
+        filter: drop-shadow(5px 5px 2px rgb(129, 128, 128));
+        color: #000;
       }
       .cmbtn{
-        position: absolute; display: flex; height: 7vh; width: 20vw;  left: 54.5%; top: 237%;background-color: rgba(255, 255, 255, 0.345); border: 0; border-radius: 20px; color: aliceblue; align-items: center;padding-left: 1%; font-size: 1rem;
+        position: relative; display: block; height: 7vh; width: 20vw; margin:2% 0 6% 15%; background-color: rgba(255, 255, 255, 0.345); border: 0; border-radius: 20px; color: aliceblue; text-align:left; font-size: 1rem;
       }
       .cmbtn:hover{filter: brightness(80%); color: #000;}
       .cmbtn i{
+        position: absolute;
           display: inline-block;
-          margin-left: 2px;
+          margin:-3% 50%;
+          text-align: right;
           transform: translateY(3px);
           transition: 0.3s margin-left;
          }
-         .cmbtn i:hover{margin-left: 10px;}
+         .cmbtn i:hover{margin-left: 55%;}
       .imgaudience{
         position: relative;
         width: auto;
-        height: 20%;
-        padding: 3%;
-        top: 7%;
-        left: -6%;
+        height: 15%;
+        padding: 0;
+        margin: 20% 5% 5% 5% ;
         border-radius: 20px;
         filter:drop-shadow(10px 1px 8px rgb(46, 46, 46));
+      }
+      .imgArch{position: relative; display:inline-block; width: auto;height: 300px ;margin:0 -10%; border-radius: 20px;
+        filter:drop-shadow(10px 10px 0px rgb(27, 48, 33)); z-index: 0;
       }
     
     </style>
@@ -426,7 +424,7 @@
 
 
           <li>
-            <a href="../../../ftu-almuni.html">FTU ALMUNI</a>
+            <a href="../FTU-Alumni/FTU-Alumni.html">FTU ALMUNI</a>
           </li>
 
 
@@ -475,7 +473,7 @@
     <div class="card2">
         <h2>The Future is Calling</h2>
         <p>Harness your curiosity and learn about the world—and yourself. Through our liberal arts and sciences curriculum, you'll discover how to use your passions to build a bright future.</p>
-        <hr style=" width:200px; height:1px; margin: 1%;  margin-top: 15%; margin-left: 25%;">
+        <hr style=" width:200px; height:1px; margin:9% 0 3% 25%;">
 
         <button class="applybtn" onclick="gotoApply()">to Apply, click</button>
         <script>
@@ -485,58 +483,57 @@
           </script>
     </div>
   </section>
-  <section id="Why" style="height: 140vh; background-color: rgb(23, 76, 33);  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; border-radius: 20px;">
-    
+  <section id="Why" style="height:150vh; background-color: rgb(23, 76, 33);display: grid; grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); gap: 2% 6%; gap: 20px; border-radius: 20px;">
+    <div style="position: relative; display: block;">
     <img class="imgaudience" src="../img/audience.png" alt="audience">
-    <div>
-    <h1 style="position: relative; display: inline-block; font-size: 3rem; padding: 3%; left:60%; top: 5%; color: aliceblue; text-shadow: 1px 1px 8px #000;">
-      Fatani University
-    </h1>
-    <p style="position: relative; display: block; font-size: 1.2rem; left:64%; top: 7%; word-spacing: 2px;line-height: 30px; color: aliceblue; text-shadow: 1px 1px 8px #000;">
-      It is the first private Islamic higher education institution in Thailand to be established by Muslim scholars and Islamic studies luminaries in the region, with a firm intention of promoting and developing Islamic studies and other disciplines to be effective and quality in accordance with international standards.
-    </p>
-    <button type="button" onclick="gotoFunction()" class="cmbtn" >
-      Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
-    </button>
-   
-  </div>
-  <div>
-    <img style=" position: relative;width: auto;height: 17% ;padding: 3%;top: 25%;left: -40%;border-radius: 20px;filter:drop-shadow(10px 1px 8px rgb(46, 46, 46));
-    " src="../img/Archery.png" alt="audience">
-    <p style="position: relative; width: 80vh; display: flex; font-size:0.8rem; left:-35%; top: 25%; word-spacing: 2px; color: aliceblue; text-shadow: 1px 1px 8px #000;">Archery is a mind game. It’s a battle to control your mind down to the last nano second. It’s a battle with yourself and you learn the ins and outs of human psychology. You learn patience. You learn to analyze. You learn to truly earn something cause it’s not a sport where you can just ride on talent alone. You find life long friends and a second family. New activities open up and it’s just a bunch of fun! You find a calmer version of yourself and it’s very stress relieving. I hope you give it a shot!</p>
-    
-    <img style=" position: relative;width: auto;height: 20% ;padding: 3%;top: 6%;left:-210%;border-radius: 20px;filter:drop-shadow(10px 1px 8px rgb(46, 46, 46));
+    <img style="z-index:1 ;position: relative; width: auto;height: 13% ; margin:9% 5% 5% 8% ; border-radius: 20px;filter:drop-shadow( 10px 10px 0px rgb(100, 25, 25));
     " src="../img/drone-Uni.png" alt="audience">
+    </div>
+    <div style="position: relative; display: block;">
+      <div>
+      <h1 style="position: relative; display: inline-block; font-size: 3rem; margin: 10% 0 2% 15%; color: aliceblue; text-shadow: 1px 1px 8px rgb(53, 53, 53);">
+        Fatani University
+      </h1>
+      <p style="position: relative; display: inline-block; font-size: 1.2rem; margin: 4% 15%; word-spacing: 2px;line-height: 30px; color: aliceblue; text-shadow: 1px 1px 1px rgb(165, 165, 165);">
+        It is the first private Islamic higher education institution in Thailand to be established by Muslim scholars and Islamic studies luminaries in the region, with a firm intention of promoting and developing Islamic studies and other disciplines to be effective and quality in accordance with international standards.
+      </p>
+      <button type="button" onclick="gotoFunction()" class="cmbtn" >
+        Read more <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; "></i> 
+      </button>
+    </div>
+    <div>
+    <img class="imgArch" src="../img/Archery.png" alt="Archery">
+    <p style="position: relative; width: 80vh; display: inline-block; margin:3% 0%; font-size:0.8rem; word-spacing: 2px; color: aliceblue; text-shadow: 1px 1px 1px rgb(165, 165, 165);"><strong>Archery</strong> is a mind game. It’s a battle to control your mind down to the last nano second. It’s a battle with yourself and you learn the ins and outs of human psychology. You learn patience. You learn to analyze. You learn to truly earn something cause it’s not a sport where you can just ride on talent alone. You find life long friends and a second family. New activities open up and it’s just a bunch of fun! You find a calmer version of yourself and it’s very stress relieving. I hope you give it a shot!</p>
+    </div>
   </div>
   </section>
 
-  <section id="How" style="height: 100vh; margin-top:3%; ">
-    <div style="position: relative; display: inline;">
-      <div style="height: 70vh; width: 90vh; background-color: rgb(253, 254, 248); margin-left:10%; margin-top: 20%; box-shadow: 4px 4px 8px rgb(138, 138, 138);" >
-        <h1 class="card1-h" style="display: inline; text-align: left; color: rgb(7, 30, 34); background-size: 0; margin: 10% 0 0 4%; top:10%;">How to Apply</h1>
-        <hr style=" width:900px; height:1px; margin: 1%;  margin-top: 15%; margin-left: 0%;">
+  <section id="How" style="height: 140vh; margin:8%; ">
+    <div style="position: relative; display: inline-block; align-items: center;">
+      <div style="height: fit-content; width: 90vh; background-color: rgb(253, 254, 248); margin:20% 20%; box-shadow: 4px 4px 8px rgb(138, 138, 138);" >
+        <h1 class="card1-h" style="display: inline-block; text-align: left; color: rgb(7, 30, 34); margin: 5% 0 0 15%; ">How to Apply</h1>
+        <hr style=" width:580px; height:1px; margin: 5% 0;">
         <p style="width: 60vh; margin-top:4%;margin-left:6%; font-size: 1.1rem; line-height:30px;">We’ll guide you through the Common Application or Coalition Application, Powered by Scoir, and answer any questions you have along the way.</p>
-        <hr style=" width:900px; height:1px; margin: 1%;  margin-top: 5%; margin-left: 0%;">
-        <h4 style="position:relative; display: inline-block; font-size: 1.3rem; margin: 4%; top: -21%;color: rgb(7, 30, 34);font-family: 'Times New Roman', Times, serif;">Quick Links</h4>
-        <hr style="position:absolute; left: 21%; top: 61%; width:0%; height: 38%;">
+        <hr style=" width:580px; height:1px; margin: 5% 0;">
+        <h4 style="position:absolute; display: flex; font: 1.3rem 'Times New Roman', Times, serif; margin: 15% 0 0 5%; color: rgb(7, 30, 34)">Quick Links</h4>
 
-        <p style=" position:relative;display: inline-block; left: 3%; width: 40vh; font-size: 1.1rem;line-height:30px; margin:4% 0;">First-Year Applicants
+        <p style=" position:relative;display: inline-block;  width: 40vh; font-size: 1.1rem;line-height:30px; margin:2% 0 5% 30%;">First-Year Applicants
           Application Requirements
           Transfer Applicants
           International Applicants
           Visiting Undergraduate Students
           U.S. Military Veterans</p>
       </div>
-      <div style="height: 61vh; width: 90vh; background-color: rgb(7, 30, 34);margin-left:45%; margin-top: -32%; right: 4%; box-shadow: 4px 4px 8px rgb(138, 138, 138);" >
-        <h1 class="card1-h" style="font-size: 3rem; text-align: left;color: aliceblue; top: 10%;">Admissions Deadlines</h1>
-        <hr style=" width:710px; height:1px; margin: 9% 3% 0 0; margin-bottom: 3%; ">
+      <div style="height: 62.5vh; width: 90vh; background-color: rgb(7, 30, 34);margin:-90% 0 0 90%; box-shadow: 4px 4px 8px rgb(138, 138, 138);" >
+        <h1 class="card1-h" style=" display:inline-block; font-size: 3rem; text-align: left;color: aliceblue; margin: 5% 0 0 2%;">Admissions Deadlines</h1>
+        <hr style=" width:580px; height:1px; margin: 5% 0% 3% 0; ">
         <h2 class="card1-h" style="font-size: 1.5rem; text-align:left; margin-top: -66%; background-size: 0%;">November 1 - Restrictive Early Action</h2>
         <p style="  position: relative;display:flex; font-size:1rem; text-align:left; margin:1% 0 5% 5%; ">Restrictive Early Action applicants are notified by mid-December. </p>
-        <hr style=" width:710px; height:1px; margin: 2% 0;">
+        <hr style=" width:580px; height:1px; margin: 5% 0% 3% 0; ">
         <h2 class="card1-h" style="font-size: 1.5rem; text-align:left; margin-top: -5%; background-size: 0%;">January 1 - Regular Decision</h2>
         <p style="  position: relative;display:flex; font-size:1rem; text-align:left; margin:1% 0 5% 5%;">Regular Decision applicants will be notified by the end of March. </p>
-        <button type="button" onclick="gotoFunction1()" class="cmbtn" style="top: 80%; left: 50%; width: 30vw; height: 10vh; border-radius: 5px; border:solid #fff 2px; font-size: 1.1rem;">
-          See more about it <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding-left: 60%;"></i> 
+        <button type="button" onclick="gotoFunction1()" class="cmbtn" style="display: inline-block; margin: 0% 0 0 4%; width: 30vw; height: 10vh; border-radius: 5px;  padding:3%;border:solid #fff 2px; font-size: 1.1rem; text-align: left;">
+          See more about it <i class="uil uil-arrow-circle-right" style=" font-size: 1.5rem; padding: -30% 0 0 60%;"></i> 
         </button>
         
       </div>
@@ -547,8 +544,8 @@
     <img style="position: relative; height: 60%;margin: 3%; left: 30%;" src="../img/std-dec.jpg" alt="student">
     <div style="position: relative; top:-20%; height: 40vh; width: 60vw; background-color: rgb(55, 100, 73);">
       <h1 class="card1-h" style="background-size: 0%;font-size: 3rem; left: 20%; top: 15%;color: rgb(9, 15, 37);">Learn More About Fatoni</h1>
-      <p style="position:relative; font-size: 1.2rem; margin: 6rem 15rem; left: -1%;color: azure;">Join our email list to download our brochure and stay in touch.</p>
-      <button class="applybtn" style="left: 25%; top: -12%; height: 15%;" onclick="gotoApply()">
+      <p style="position:relative; font-size: 1.2rem; margin: 6% 0 0 25%;color: azure;">Join our email list to download our brochure and stay in touch.</p>
+      <button class="applybtn" style="margin:5% 0 0 30%; height: 15%;" onclick="gotoApply()">
         Log in</button>
         <script>
           function gotoApply() {
