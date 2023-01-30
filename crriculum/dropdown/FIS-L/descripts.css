@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*[Header]*/
+
+.header{
+    display: flex;
+    width:100%;
+    height:150px;
+    background-color: #1138a3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2%;
+    height:70%;
+    width:30%;
+}
+
+.header li{ 
+    display:inline-block;
+    margin-right: 10%;
+}
+
+.header li a{
+    color: white;
+}
+
+.flag{
+    height: 25%;
+    width:50%;
+}
+
+.divider{
+    width: 100%;
+    color: white;
+    height: 100px;
+}
+
+@media only screen and (max-width: 800px){
+
+    .header{
+        flex-direction: column;
+        height: auto;
+    }
+    .logo{
+        width: 70%;
+        height: 100%;
+        margin-left: 0;
+    }       
+}
+
+/*[Contents]*/
+
+body section{
+    align-items: center;
+}
+.course-intro{
+    width: 100%;
+    height: 250px;
+    background-color: #1138a3;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.buffer{
+    width: 100%;
+    height:80px;
+    background-color: #189094;
+    color: white;
+}
+
+.buffer h1{
+    padding-top: 5px;
+    padding-left: 2em;
+}
+
+.subtitle{
+    color: #2270af;
+}
+
+.h3{
+    text-decoration: none;
+    font-weight: 5;
+}
+
+.degreename span{
+    font-weight: 5;
+}
+
+.desc{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.buttons ul{
+    list-style-type:none;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons ul li{
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+.occupations ul{
+    list-style-type: circle;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+}
+.buttons ul li a{
+    height: 50px;
+    padding: 8px;
+    margin: 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #1138a3;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.buttons ul li a:hover{
+    background-color: #6180d4;
+}
+@media only screen and (max-width: 800px){
+    .buttons ul li{
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin: 20px;
+    }
+       
+}
+
+
+/*[Footer]*/
+.footer{
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+.footer h1{
+    margin: 20px;
+}
+
+.footer-details{
+    color: rgb(184, 184, 184);
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    #Faculty-count h1{
+        font-size: 2em;
+    }
+
+    .courses-container{
+        flex-direction: column;
+        width:100%;
+        height: auto;
+    }
+
+    .degree{
+        width: auto;
+    }
+
+}
