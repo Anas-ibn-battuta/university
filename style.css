@@ -1,9 +1,8 @@
-* {
+*{
     margin: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
     margin: 0;
     font-size: 13px;
     line-height: 20px;
@@ -12,60 +11,104 @@ body {
     overflow-x: hidden;
 
 }
-
-::selection {
+::selection{
+<<<<<<< HEAD
+    background-color: hsl(113, 44%, 76%);
+    color:rgb(86, 184, 99);
+=======
     background-color: hsl(116, 42%, 30%);
-    color: #fff;
-}
-
+    color:#fff;
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
+  }
 /*------------header style ------------*/
-.header-section {
+.header-section{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+<<<<<<< HEAD
+    justify-content: space-between;
+    background-color: #fff;
+
+
+=======
+    justify-content:space-between ;
+   
+    
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
+    /*
     background-color: rgb(250, 246, 246);
     position: relative;
     width: auto;
     height: 150px;
+    */
 }
-
-.ftulogo {
-    width: 260px;
+.ftulogo{   
+    height: 3rem;
+    margin-left:1rem ;
+    margin-top: 10px;
+   /* width: 260px;
     position: relative;
     left: 29px;
-    top: 6vh;
+    top: 3vh; */    
 }
-
-.social-logo {
-    position: absolute;
+.social-logo{
+    margin-top:1vh 0 ;
+    list-style-type: none;
+    background-color: white(100, 6, 6);
+    display: flex;
+    flex-direction: row;
+    /*position: absolute; 
     padding: 0%;
     right: 0%;
     top: 26px;
-    width: 400px;
-    height: 75px;
+    width: auto;
+    height: 75px;*/
 }
-
-.SL-img {
-    width: 8vw;
+.SL-img{
+    width: 3.5rem;
+    height:5rem ;
+    /*
     height: 15vh;
     margin: auto;
-    padding: 0;
+    padding: 0;    */
 }
-
-.social-logo .SL-img {
+/*
+.social-logo .SL-img{
     margin: auto;
 }
+*/
+/*for decktop header */
+@media only screen and (min-width: 600px){
+    .header-section{
+        height: 20vh;
+    }
+    .ftulogo{
+      margin: 1.5rem 0;
+        width: 20rem;
+        height: 10vh;
+        flex: 1 1 0;
+    }
+    
+    .SL-img{
+        width: 9rem;
+        height: auto;
+        flex: 1 1 0;
+        
+    }
+}
 
-.flag-logo {
-    position: relative;
+/*for the flag*/
+.flag-logo{   
+    position: relative; 
     width: auto;
     height: 30px;
 }
-
-.FL-img {
+.FL-img{
     width: 3vw;
     height: 4vh;
     margin-top: 2px;
 }
-
-.flag-logo .FL-img {
+.flag-logo .FL-img{
     max-width: 100%;
     max-height: 100%;
     margin: auto;
@@ -78,53 +121,76 @@ body {
     z-index: 100;
 }
 nav ul {
+    position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #417d14;
-    justify-content: center;
-    flex-wrap: wrap;
     display: flex;
+    background-color: #417d14;
+    justify-content:center;
+<<<<<<< HEAD
+    list-style: none;
+    flex-wrap: wrap;
+    font-family: 'Prompt', sans-serif;
+
+=======
+    flex-wrap: wrap;
+    font-family: 'Prompt', sans-serif;
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
+    
   }
   
   nav ul li {
-    position:relative;
+    position: relative;
   }
   
   nav ul li a {
-    display: flex;
-    padding: 1rem;
-    font-size: 1.1rem;
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
+    margin-left: 30px;
   }
   nav ul li a:hover{
     background: rgb(43, 43, 43);
     color:#417d14;
     display: block;
-
   }
 
-  
   nav ul li ul {
     position: relative;
     top: 100%;
     left: 0;
+    text-align: left;
     background: rgb(43, 43, 43);
     width: 200px;
     display: none;
     text-decoration: none;
+<<<<<<< HEAD
+    list-style: none;
+=======
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
+    
   }
   
   nav ul li:hover ul {
+    display: none;
+  }
+.checkbtn{
+    color: #fff; 
+    font-size: 25px;
+    margin:10px;
+    margin-left: 100px;
+    cursor: pointer;
     display: none;
   }
  
 .submenu{
     position: absolute;
     background-color: rgb(43, 43, 43);
-    left: 0;
-    width: 250px;
+    left:30px;
+    width: 240px;
     display: none;
 }
 .submenu2{
@@ -141,18 +207,9 @@ nav ul {
 .submenu li:hover > .submenu2{
     display: block;
 }
-.checkbtn{
-  font-size: 25px;
-  margin-left: 400px;
-  color: #ffffff;
-  line-height: 40px;
-  padding-top:7px ;
-  cursor: pointer;
-  display: none;
-}
 
 
-/*------------ hover_content style ------------*/
+/*-----------------click_content section styling------------------*/
 
 .allTabs {
     margin-top: 20px;
@@ -163,8 +220,6 @@ nav ul {
 }
 
 .allTabs li {
-    /* need to make sure that @media change inline to block for web mobile*/
-    /* need to make tab active to change contents */
     display: inline;
     margin: 10px;
     padding: 5px;
@@ -177,16 +232,15 @@ nav ul {
 }
 
 img.hover_content {
-    width: 300px;
+    width: 55%;
     height: auto;
     margin: auto;
-    display: inline;
     float: left;
     padding-right: 10px;
     padding-left: 30px;
 }
 
-.flex-container {
+.content_hc {
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
@@ -202,30 +256,10 @@ img.hover_content {
 .item_p {
     display: flex;
     flex-direction: column;
-    flex-basis: 33%;
+    flex-basis: 33.3%;
     padding-left: 30px;
+    padding-top: 20px;
 }
-
-    /* For fix the white transparent space */
-
-@media (max-width: 990px) {
-    .item_p {
-        flex: 50%;
-    }
-}
-
-@media (max-width: 660px) {
-    .item_p {
-        flex: 100%;
-    }
-}
-
-.item {
-    flex-basis: 33%;
-    display: inline;
-    flex-direction: row;
-}
-
 
 p.hover_content {
     padding-left: 30px;
@@ -247,7 +281,7 @@ a.hover_content:visited {
 }
 
 a.hover_content:hover {
-    font-size: 24px;
+    font-size: 24.5px;
     font-weight: bolder;
     color: darkgreen;
     text-decoration: none;
@@ -260,7 +294,7 @@ a.hover_content:active {
     text-decoration: none;
 }
 
-.all_news_link {
+a.all_news_link:link {
     display: block;
     margin: auto;
     text-decoration: underline;
@@ -270,18 +304,35 @@ a.hover_content:active {
     font-weight: bolder;
 }
 
+a.all_news_link:visited {
+    font-size: 24px;
+    font-weight: bolder;
+    color: darkgreen;
+}
+
+a.all_news_link:hover {
+    font-size: 24.5px;
+    font-weight: bolder;
+    color: darkgreen;
+}
+
+a.all_news_link:active {
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+}
+
 /*---------Video section style -----------*/
-.Video-section {
+.Video-section{
     background-color: var(--main-color-1);
     width: 100%;
     padding: 10px 10px;
     margin: 0;
     align-items: center;
-
-
+    
+    
 }
-
-.Vedio-list {
+.Vedio-list{
     position: relative;
     padding-left: 6px;
 }
@@ -289,33 +340,30 @@ a.hover_content:active {
 /*---------Fonts used-----------*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai&family=Pacifico&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans+Thai:wght@100;200;400;500;600&family=Pacifico&family=Prompt:wght@300&family=Raleway&display=swap');
-
-:root {
-    --hue-1: 113;
-    --hue-2: 291;
-    --main-color-1: hsl(var(--hue-1), 41%, 38%);
-    --main-color-1-dark: hsl(var(--hue-1), 41%, 20%);
-    --bg-color: hsl(var(--hue-2), 3%, 93%);
+:root{ 
+    --hue-1:113;
+    --hue-2:291;
+    --main-color-1:hsl(var(--hue-1), 41%, 38%);
+    --main-color-1-dark:hsl(var(--hue-1), 41%, 20%);
+    --bg-color:hsl(var(--hue-2), 3%, 93%);
 }
 
 
 /*-----------------administrator section style------------------*/
 
-.administrator {
+.administrator{
     width: 100%;
     position: relative;
     font-family: 'Prompt', sans-serif;
 }
-
-.administrator .container {
-    display: block;
-    padding: 90px;
-    margin: 0 10vw 0;
-    font-family: 'Prompt', sans-serif;
+.administrator .container{
+  display: block;
+  padding: 90px;
+  margin: 0 10vw 0;
+  font-family: 'Prompt', sans-serif;
 
 }
-
-.admin-sub-title {
+.admin-sub-title{
     position: relative;
     font-size: 1rem;
     color: black;
@@ -324,8 +372,7 @@ a.hover_content:active {
     text-align: center;
     left: -17%;
 }
-
-.admin-title {
+.admin-title{
     position: relative;
     font-size: 2rem;
     color: var(--main-color-1);
@@ -335,53 +382,48 @@ a.hover_content:active {
     font-family: 'Prompt', sans-serif;
 
 }
-
-.row-fluid {
-    display: grid;
-    position: relative;
-    margin: 0;
-    grid-template-columns: repeat(2, 48% 5% 1fr);
-    padding-top: 30px;
-    padding: 1rem 0;
-    gap: 5px;
+.row-fluid{
+  display: grid;
+  position: relative;
+  margin: 0;
+  grid-template-columns: repeat(2, 48% 5% 1fr);
+  padding-top: 30px;
+  padding: 1rem 0;
+  gap: 5px;
 }
 
-.card-item {
+.card-item{
     display: block;
     position: relative;
     border-radius: 4%;
     background-color: var(--main-color-1);
     padding: 12px 10px;
-    width: 37vh;
+    width: 40vh;
     justify-self: center;
     align-items: center;
     text-align: center;
 }
-
-.admin-img {
+.admin-img{
     position: relative;
     width: 270px;
     padding: 0;
     border-radius: 4%;
     perspective: 1px;
 }
-
-.item_content {
+.item_content{
     position: relative;
     padding-top: 1px;
     justify-self: center;
     align-items: center;
     text-align: center;
 }
-
-.item_title {
+.item_title{
     position: relative;
     color: #fff;
     font-size: 1.2rem;
     margin-top: 10px;
 }
-
-.item_introtext {
+.item_introtext{
     position: relative;
     color: rgb(52, 52, 52);
     font-size: 0.7rem;
@@ -389,8 +431,7 @@ a.hover_content:active {
     left: -10px;
     padding-bottom: 10px;
 }
-
-.cta-link {
+.cta-link{
     position: relative;
     text-decoration: underline;
     color: #fff;
@@ -398,140 +439,120 @@ a.hover_content:active {
     font-family: 'Prompt', sans-serif;
 
 }
-
-.cta-link::after {
+.cta-link::after{
     content: "";
     color: var(--main-color-1-dark);
 }
-
-.cta-link:hover,
-.cta-link.active {
+.cta-link:hover, .cta-link.active{
     color: var(--main-color-1-dark);
     font-weight: 600;
 }
-
 .cta-link:hover::after,
-.cta-link.active::after {
+.cta-link.active::after{
     opacity: 0.2;
 }
 
 /* --------------Right sidebar--------------- */
-.aside-right {
+.aside-right{
     width: 20%;
     height: 5%;
-    top: 13%;
+    top:13%;
     left: 60%;
     position: absolute;
 
 }
-
 aside {
     width: 40%;
     float: right;
 }
-
-.vcounter_TypeText {
+.vcounter_TypeText{
     position: relative;
     text-align: right;
     padding-bottom: 10%;
     font-size: 0.8rem;
 }
-
-.mvc_peopleTable {
+.mvc_peopleTable{
     position: relative;
     font-family: 'Prompt', sans-serif;
 }
-
-.mvc_peopleImg {
+.mvc_peopleImg{
     position: relative;
     width: 1vw;
     height: auto;
 }
-
-.mvc-day {
+.mvc-day{
     position: relative;
     padding-right: 50px;
     font-size: 0.8rem;
 }
-
-.mvc-num {
+.mvc-num{
     text-align: center;
 }
-
 /* --------------- 1000px Screens --------------- */
 
 @media (max-width: 1000px) {
-    .administrator .container {
+    .administrator .container{
         display: block;
         padding: 60px;
         margin: 0 10vw 0;
     }
-
-    .admin-sub-title {
+    .admin-sub-title{
         left: -20%;
     }
-
-    .admin-title {
+    .admin-title{
         left: -20%;
     }
-
-    .row-fluid {
+    .row-fluid{
         display: grid;
         position: relative;
-        grid-template-columns: repeat(2, 40% 30% 1fr);
+        grid-template-columns: repeat(2,40% 30% 1fr);
         padding-top: 30px;
         padding: 1rem 0;
         gap: 3px;
-    }
-
-    .aside-right {
+      }
+      .aside-right{
         width: 20%;
         height: 5%;
-        top: 11%;
+        top:11%;
         left: 63%;
         position: absolute;
-
+    
     }
-
-    .vcounter_TypeText {
+    .vcounter_TypeText{
         position: relative;
         text-align: center;
         left: 80%;
     }
-
-    .mvc_peopleImg {
+    .mvc_peopleImg{
         position: relative;
         width: 2vw;
     }
-
-    .checkbtn {
+    .checkbtn{
         display: block;
     }
-
-    nav ul li a {
+    nav ul li a{
         display: none;
     }
-
+    .item_p {
+        flex: 50%;
+    }
 }
 
-/* --------------- 768px Screens --------------- */
+/* --------------- 992px Screens --------------- */
 
-@media (max-width: 768px) {
-    .administrator .container {
+@media (max-width: 992px) {
+    .administrator .container{
         display: block;
         padding: 40px;
         margin: 0 10vw 0;
     }
-
-    .admin-sub-title {
+    .admin-sub-title{
         left: 0%;
     }
-
-    .admin-title {
+    .admin-title{
         left: 0%;
     }
-
-    .row-fluid {
+    .row-fluid{
         display: grid;
         position: relative;
         grid-template-columns: repeat(1, 1fr);
@@ -539,131 +560,112 @@ aside {
         padding: 1rem 0;
         margin: 0;
         gap: 3px;
-    }
-
-    .aside-right {
+      }
+    .aside-right{
         position: relative;
-        top: 0%;
+        top: 0%; 
         left: 18%;
         padding-bottom: 110px;
     }
-
-    .vcounter_TypeText {
+    .vcounter_TypeText{
         width: 5rem;
         text-align: right;
     }
-
-    .mvc_peopleImg {
+    .mvc_peopleImg{
         position: relative;
         width: 2vw;
         height: auto;
     }
+   
 
-
-
+   
 
 
 }
 
-/* --------------- 500px Screens --------------- */
+/* --------------- 600px Screens --------------- */
 
-@media (max-width: 500px) {
-    .admin-sub-title {
+@media (max-width: 600px) {
+    .admin-sub-title{
         left: 0;
     }
-
-    .admin-title {
+    .admin-title{
         left: 0;
         margin-bottom: 20%;
     }
-
-    .row-fluid {
+    .row-fluid{
         margin-top: 1rem;
     }
-
-    .aside-right {
+    .aside-right{
         position: relative;
-        top: 0%;
+        top: 0%; 
         left: 6%;
         padding-bottom: 110px;
     }
-
-    .vcounter_TypeText {
+    .vcounter_TypeText{
         width: 6rem;
         text-align: right;
     }
-
-    .mvc_peopleImg {
+    .mvc_peopleImg{
         position: relative;
         width: 3vw;
     }
-
+    .item_p {
+        flex: 100%;
+    }
 
 }
 
 /*carousel section*/
 
-#slider {
-    overflow: hidden;
+#slider{
+    overflow:hidden;
+    text-align: center;
 }
-
-#slider figure {
-    position: relative;
+#slider figure{
+    position:relative;
     width: 650%;
-    margin: 0;
-    left: 0;
-    animation: 25s slider infinite;
+    margin:0;
+    left:0;
+    transition: left 2s;
+}
+#slider figure img{
+    float:left;
+    width:16%;
+}
+.buttons{
+  position: relative;
+  top: 5px;
 }
 
-#slider figure img {
-    float: left;
-    width: 16%;
+.buttons a{
+  display:inline-block;
+  margin: 3px;
+  height: 15px;
+  width: 80px;
+  background-color: rgba(207, 207, 207, 0.5);
 }
 
-@keyframes slider {
-    0% {
-        left: -3%;
-    }
+.buttons a:hover{
+  display:inline-block;
+  background-color: rgba(22, 77, 25, 0.699);
+  transition: background-color 0.5s;
+}
 
-    20% {
-        left: -3%;
-    }
-
-    25% {
-        left: -105%;
-    }
-
-    35% {
-        left: -105%;
-    }
-
-    45% {
-        left: -210%;
-    }
-
-    50% {
-        left: -210%;
-    }
-
-    65% {
-        left: -315%;
-    }
-
-    75% {
-        left: -315%;
-    }
-
-    80% {
-        left: -420%;
-    }
-
-    95% {
-        left: -420%
-    }
-
-    100% {
-        left: -523%;
-    }
+#slide-1:target ~ .image-container{
+  left:-3%;
+}
+#slide-2:target ~ .image-container{
+  left:-105%;
+}
+#slide-3:target ~ .image-container{
+  left:-210%;
+}
+#slide-4:target ~ .image-container{
+  left:-315%;
+}
+#slide-5:target ~ .image-container{
+  left:-420%;
 }
 
 /*------Flag-slider style------*/
@@ -676,28 +678,23 @@ aside {
     width: 80%;
     overflow: hidden;
 }
-
 .Flag-slider figure {
     display: flex;
     width: 100%;
 }
-
 .Flag-slider figure img {
     height: 180px;
     width: 40%;
     transition: all 0.15s ease;
 }
-
 .Flag-slider figure input {
     display: none;
 }
-
 .dots {
     display: flex;
     justify-content: center;
     margin: 5px;
 }
-
 .dots label {
     height: 15px;
     width: 15px;
@@ -707,68 +704,75 @@ aside {
     transition: all 0.15s ease;
     margin: 5px;
 }
-
-.dots label:hover {
-    background: var(--main-color-1);
-}
-
-#img1:checked~.m1 {
+.dots label:hover {background: var(--main-color-1);}
+#img1:checked ~ .flag-img {
     margin-left: -1%;
 }
-
-#img2:checked~.m2 {
-    margin-left: -6%;
+#img2:checked ~ .flag-img {
+<<<<<<< HEAD
+    margin-left: -3%;
 }
-
-#img3:checked~.m3 {
+#img3:checked ~ .flag-img {
+    margin-left: -4%;
+}
+#img4:checked ~ .flag-img {
+    margin-left: -5%;
+}
+#img5:checked ~ .flag-img {
+=======
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
+    margin-left: -6%;
+}#img6:checked ~ .flag-img {
+    margin-left: -10%;
+}#img7:checked ~ .flag-img {
+    margin-left: -11%;
+}#img8:checked ~ .flag-img {
+    margin-left: -11%;
+}#img9:checked ~ .flag-img {
+    margin-left: -13%;
+}#img10:checked ~ .flag-img {
+    margin-left: -15%;
+}#img11:checked ~ .flag-img {
+    margin-left: -20%;
+}
+<<<<<<< HEAD
+#img12:checked ~ .flag-img {
+    margin-left: -30%;
+=======
+#img3:checked ~ .flag-img {
     margin-left: -9%;
 }
-
-#img4:checked~.m4 {
+#img4:checked ~ .flag-img {
     margin-left: -12%;
 }
-
-#img5:checked~.m5 {
+#img5:checked ~ .flag-img {
     margin-left: -45%;
-}
-
-#img6:checked~.m6 {
+}#img6:checked ~ .flag-img {
     margin-left: -67%;
-}
-
-#img7:checked~.m7 {
+}#img7:checked ~ .flag-img {
     margin-left: -90%;
-}
-
-#img8:checked~.m8 {
+}#img8:checked ~ .flag-img {
     margin-left: -112%;
-}
-
-#img9:checked~.m9 {
+}#img9:checked ~ .flag-img {
     margin-left: -134.5%;
-}
-
-#img10:checked~.m10 {
+}#img10:checked ~ .flag-img {
     margin-left: -157%;
-}
-
-#img11:checked~.m11 {
+}#img11:checked ~ .flag-img {
     margin-left: -200%;
 }
-
-#img12:checked~.m12 {
+#img12:checked ~ .flag-img {
     margin-left: -300%;
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
 }
-
 /*------go to top button style---*/
 .gotopbtn {
     overflow: hidden;
     z-index: 100;
     position: fixed;
     bottom: 15px;
-    right: 50px;
+    right: 50px;     
     padding: 10px;
-    border: 0;
+    border:0;
     cursor: pointer;
     transition: 0.5s;
     transform: translateY(100px);
@@ -777,13 +781,33 @@ aside {
     color: white;
     background: var(--main-color-1);
     border-radius: 4px;
-}
+  }
 
-
+/*----- location style ------*/
+.map-box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+  }
+  .map-box iframe{
+    width: 80%;
+    height: 500px;
+    filter: invert(100%);
+  }
+  .map-box h1{
+    color: var(--main-color-1);
+    margin-bottom: 50px;
+  }
+  
 
 /* --------------- Footer style --------------- */
 
-.footer_green {
+.footer_green{
     background-color: rgb(58, 136, 38);
     height: 300px;
     padding-top: 70px;
@@ -794,21 +818,17 @@ aside {
 }
 
 
-.footer_green h1 {
+.footer_green h1{
     border: 1px solid #ffffff;
-    margin-left: 100px;
-    margin-top: -20px;
+    margin-left: 110px;
     font-size: 40px;
     width: 400px;
     text-align: center;
     color: #ffffff;
-    padding-left: 12px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-right: 12px;
+    padding: 30px;
 }
 
-.detail {
+.detail{
     font-size: 12px;
     color: #ffffff;
     margin-top: 15px;
@@ -817,7 +837,7 @@ aside {
     left: 260px;
 }
 
-.info {
+.info{
     position: absolute;
     width: 350px;
     left: 820px;
@@ -826,104 +846,130 @@ aside {
 }
 
 
-.info h2 {
+.info h2{
     padding: 20px;
     font-size: 2rem;
     color: #ffffff;
 }
 
-.info p {
+.info p{
     font-size: 1rem;
     color: #ffffff;
     margin-top: 10px;
 }
 
-.info a {
+.info a{
     font-size: 0.8rem;
     color: #ffffff;
     text-decoration: underline;
-
+    
 }
 
-.footer_black {
+.footer_black{
     background-color: rgb(0, 0, 0);
     height: 50px;
     width: 100rem;
     position: relative;
-    bottom: -150px;
+    bottom: -130px;
+    
 
 }
 
-.footer_black p {
+.footer_black p{
+<<<<<<< HEAD
+    position: relative;
+=======
+>>>>>>> parent of ebdf5bb (Done FTU-Alumni)
     font-size: 1rem;
     color: #ffffff;
-    text-align: center;
+    left:38%;
     font-family: sans-serif;
-    padding-top: 15px;
+    padding-top: 18px;
 }
 
-.footer_black span {
+.footer_black span{
     color: rgb(58, 136, 38);
 }
 
-.footer-img {
+.footer-img{
     width: 30px;
     height: 30px;
-    left: 59%;
-    position: relative;
-    bottom: 50%;
+    left: 52%;
+    position: absolute;
+    bottom: 20%;
 }
 
 
-@media (max-width: 700px) {
-    * {
+@media (max-width: 600px){
+    *{
         flex-direction: column;
     }
-
-    .footer_green {
+    
+    .footer_green{
         height: 600px;
         position: relative;
+        height: 500px;
+    }
+    .footer_green h1{
+        margin-left: 400px;
+    }
+    .detail{
+        left: 565px;
     }
 
     .info {
-        display: flex;
-        position: absolute;
-        width: 300px;
-        left: 160px;
-        top: 300px;
+       display: flex;
+       position: absolute;
+       width: 300px;
+       left: 160px;
+       top: 300px;
 
     }
 
-    .footer-img {
-        padding-left: 410px;
+    .footer-img{
+       padding-left: 410px;
     }
 
+    .buttons a{
+        height: 10px;
+        width: 50px;
+      }
+   
 }
-
 /*table style*/
-.containerx {
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;
-    display: flex;
+.containerx{
+    width:90%;
+    padding:20px;
+    margin:100px auto;
+    display:flex;
     flex-direction: row;
     justify-content: center;
+    background-color: aquamarine;
 }
-
-.boxx {
-
-    transition: 1s;
-
+.boxx{
+    margin: 6px;
+    transition: 0.25s; 
 }
-
-.boxx img {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-
+.boxx img{
+display: block;
+width: 100%;
+border-radius: 10px;
 }
-
-.boxx:hover {
+.boxx:hover{
     transform: scale(1.1);
     z-index: 2;
 }
+.card{
+    background-color: azure;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    margin: 2px;
+}
+.texx{
+    text-align: center;
+    
+}
+ 
+
+
+
